@@ -30,3 +30,17 @@ Use this if you already have images locally or will sync them another way:
 ```bash
 python3 scripts/prepare_coco_subset.py --skip-image-download --verify
 ```
+
+## Train / validation / test split (`scripts/split_yolo_dataset.py`)
+
+After `coco_filtered/` exists, pool its `train` + `val` images and labels and split **80% / 10% / 10%** with a **fixed seed** (default **42**). Output goes to `curated_yolo/` with `data.yaml`, YOLO folders, and `dataset_manifest.json` (disk size + per-class instance counts).
+
+```bash
+python3 scripts/split_yolo_dataset.py --force
+```
+
+Re-run with the same `--seed` and paths for a reproducible split. Options: `--train-pct`, `--val-pct`, `--test-pct` (must sum to 100).
+
+## Dataset documentation
+
+See **[DATASET.md](DATASET.md)** for directory layout, preprocessing steps, YOLO format notes, and where to read **final sizes and class distribution** (`curated_yolo/dataset_manifest.json`).

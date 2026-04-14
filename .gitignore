@@ -38,6 +38,7 @@ ENV/
 
 # COCO / dataset tooling (large binaries & generated trees)
 coco_filtered/
+curated_yolo/
 data/**/*.zip
 data/annotations/
 data/train2017/
