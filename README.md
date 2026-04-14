@@ -1,5 +1,21 @@
 # Pet-mischief-detection
 
+Object detection dataset pipeline derived from **COCO 2017**: it keeps a fixed set of categories (below), optionally requiring images where a **cat** appears alongside another listed object—useful for pet–object interaction scenes.
+
+## Classes included
+
+Seven COCO thing categories are exported with **remapped IDs 0–6** (order follows sorted original COCO category ids; see `data.yaml` and script output):
+
+| ID | Name |
+|----|------|
+| 0 | cat |
+| 1 | cup |
+| 2 | plant *(COCO: “potted plant”)* |
+| 3 | laptop |
+| 4 | keyboard |
+| 5 | vase |
+| 6 | scissors |
+
 ## COCO subset (`scripts/prepare_coco_subset.py`)
 
 This script: ensures annotations → filters seven target classes → optional parallel per-image download → YOLO `.txt` labels → `data.yaml`. It avoids downloading full `train2017.zip` / `val2017.zip` by fetching only `annotations_trainval2017.zip` and then downloading individual image files from the COCO CDN.
