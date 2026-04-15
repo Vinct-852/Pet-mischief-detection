@@ -1,3 +1,6 @@
+# mischif_out images and results
+mischief_out/
+
 # Python
 __pycache__/
 *.py[cod]
