@@ -45,3 +45,7 @@ data/train2017/
 data/val2017/
 train2017/
 val2017/
+
+# Custom - sonia
+prev/
+yolo*.pt
