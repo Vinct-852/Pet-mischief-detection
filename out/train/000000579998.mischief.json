@@ -1,0 +1,68 @@
+{
+  "image": "curated_yolo/images/train/000000579998.jpg",
+  "detections": [
+    {
+      "class": "plant",
+      "bbox": [
+        250,
+        193,
+        410,
+        324
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        118,
+        226,
+        257,
+        394
+      ],
+      "conf": null
+    },
+    {
+      "class": "vase",
+      "bbox": [
+        441,
+        340,
+        499,
+        426
+      ],
+      "conf": null
+    },
+    {
+      "class": "vase",
+      "bbox": [
+        325,
+        269,
+        400,
+        325
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 33,
+  "top_warning": "High Risk: cat near fragile object (plant).",
+  "triggered": [
+    {
+      "cat_bbox": [
+        118,
+        226,
+        257,
+        394
+      ],
+      "other_class": "plant",
+      "other_bbox": [
+        250,
+        193,
+        410,
+        324
+      ],
+      "iou": 0.01572456791821391,
+      "center_dist_norm": 0.19694136611573881,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (plant)."
+    }
+  ]
+}

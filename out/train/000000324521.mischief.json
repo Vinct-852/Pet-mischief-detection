@@ -1,0 +1,164 @@
+{
+  "image": "curated_yolo/images/train/000000324521.jpg",
+  "detections": [
+    {
+      "class": "cat",
+      "bbox": [
+        109,
+        11,
+        548,
+        457
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        321,
+        81,
+        344,
+        114
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        317,
+        0,
+        351,
+        37
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        284,
+        0,
+        329,
+        43
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        413,
+        37,
+        443,
+        90
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        344,
+        0,
+        366,
+        31
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 100,
+  "top_warning": "Mischief Alert! Your cat is plotting against your drink!",
+  "triggered": [
+    {
+      "cat_bbox": [
+        109,
+        11,
+        548,
+        457
+      ],
+      "other_class": "cup",
+      "other_bbox": [
+        321,
+        81,
+        344,
+        114
+      ],
+      "iou": 0.003876523284676752,
+      "center_dist_norm": 0.17069824435242442,
+      "weight": 2.0,
+      "message": "Mischief Alert! Your cat is plotting against your drink!"
+    },
+    {
+      "cat_bbox": [
+        109,
+        11,
+        548,
+        457
+      ],
+      "other_class": "cup",
+      "other_bbox": [
+        317,
+        0,
+        351,
+        37
+      ],
+      "iou": 0.004506341503201338,
+      "center_dist_norm": 0.2694627177366101,
+      "weight": 2.0,
+      "message": "Mischief Alert! Your cat is plotting against your drink!"
+    },
+    {
+      "cat_bbox": [
+        109,
+        11,
+        548,
+        457
+      ],
+      "other_class": "cup",
+      "other_bbox": [
+        284,
+        0,
+        329,
+        43
+      ],
+      "iou": 0.007336121738864634,
+      "center_dist_norm": 0.26704473525048195,
+      "weight": 2.0,
+      "message": "Mischief Alert! Your cat is plotting against your drink!"
+    },
+    {
+      "cat_bbox": [
+        109,
+        11,
+        548,
+        457
+      ],
+      "other_class": "cup",
+      "other_bbox": [
+        413,
+        37,
+        443,
+        90
+      ],
+      "iou": 0.008120780003473037,
+      "center_dist_norm": 0.2467618411545837,
+      "weight": 2.0,
+      "message": "Mischief Alert! Your cat is plotting against your drink!"
+    },
+    {
+      "cat_bbox": [
+        109,
+        11,
+        548,
+        457
+      ],
+      "other_class": "cup",
+      "other_bbox": [
+        344,
+        0,
+        366,
+        31
+      ],
+      "iou": 0.0022444857067069313,
+      "center_dist_norm": 0.27512639140947565,
+      "weight": 2.0,
+      "message": "Mischief Alert! Your cat is plotting against your drink!"
+    }
+  ]
+}

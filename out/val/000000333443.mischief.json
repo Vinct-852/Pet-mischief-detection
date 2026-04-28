@@ -1,0 +1,28 @@
+{
+  "image": "curated_yolo/images/val/000000333443.jpg",
+  "detections": [
+    {
+      "class": "plant",
+      "bbox": [
+        321,
+        331,
+        374,
+        423
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        3,
+        171,
+        281,
+        387
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 0,
+  "top_warning": "No issues detected.",
+  "triggered": []
+}

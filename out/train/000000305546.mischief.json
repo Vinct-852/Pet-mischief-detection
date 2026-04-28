@@ -1,0 +1,126 @@
+{
+  "image": "curated_yolo/images/train/000000305546.jpg",
+  "detections": [
+    {
+      "class": "cat",
+      "bbox": [
+        2,
+        59,
+        270,
+        350
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        319,
+        51,
+        581,
+        309
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        378,
+        41,
+        638,
+        292
+      ],
+      "conf": null
+    },
+    {
+      "class": "keyboard",
+      "bbox": [
+        172,
+        37,
+        316,
+        72
+      ],
+      "conf": null
+    },
+    {
+      "class": "keyboard",
+      "bbox": [
+        490,
+        26,
+        639,
+        49
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        167,
+        85,
+        298,
+        236
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 75,
+  "top_warning": "Caution: cat on/near keyboard.",
+  "triggered": [
+    {
+      "cat_bbox": [
+        2,
+        59,
+        270,
+        350
+      ],
+      "other_class": "keyboard",
+      "other_bbox": [
+        172,
+        37,
+        316,
+        72
+      ],
+      "iou": 0.015583335371969567,
+      "center_dist_norm": 0.2527211344421004,
+      "weight": 1.0,
+      "message": "Caution: cat on/near keyboard."
+    },
+    {
+      "cat_bbox": [
+        378,
+        41,
+        638,
+        292
+      ],
+      "other_class": "keyboard",
+      "other_bbox": [
+        490,
+        26,
+        639,
+        49
+      ],
+      "iou": 0.017539961186910213,
+      "center_dist_norm": 0.19255471121829068,
+      "weight": 1.0,
+      "message": "Caution: cat on/near keyboard."
+    },
+    {
+      "cat_bbox": [
+        167,
+        85,
+        298,
+        236
+      ],
+      "other_class": "keyboard",
+      "other_bbox": [
+        172,
+        37,
+        316,
+        72
+      ],
+      "iou": 0.0,
+      "center_dist_norm": 0.14578203677522825,
+      "weight": 1.0,
+      "message": "Caution: cat on/near keyboard."
+    }
+  ]
+}

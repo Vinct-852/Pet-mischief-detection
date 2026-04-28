@@ -1,0 +1,5836 @@
+[
+  {
+    "image": "curated_yolo/images/test/000000002988.jpg",
+    "detections": [
+      {
+        "class": "plant",
+        "bbox": [
+          13,
+          0,
+          122,
+          252
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          164,
+          150,
+          387,
+          254
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 0,
+    "top_warning": "No issues detected.",
+    "triggered": []
+  },
+  {
+    "image": "curated_yolo/images/test/000000011990.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          268,
+          142,
+          410,
+          322
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          447,
+          187,
+          526,
+          301
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          368,
+          18,
+          398,
+          44
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          397,
+          17,
+          445,
+          47
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          321,
+          18,
+          367,
+          42
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 0,
+    "top_warning": "No issues detected.",
+    "triggered": []
+  },
+  {
+    "image": "curated_yolo/images/test/000000012443.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          31,
+          81,
+          615,
+          422
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          98,
+          153,
+          525,
+          475
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 75,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          31,
+          81,
+          615,
+          422
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          98,
+          153,
+          525,
+          475
+        ],
+        "iou": 0.51792582572427,
+        "center_dist_norm": 0.07943649192908761,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000014804.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          196,
+          208,
+          596,
+          354
+        ],
+        "conf": null
+      },
+      {
+        "class": "vase",
+        "bbox": [
+          112,
+          0,
+          258,
+          287
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 100,
+    "top_warning": "High Risk: cat near fragile object (vase).",
+    "triggered": [
+      {
+        "cat_bbox": [
+          196,
+          208,
+          596,
+          354
+        ],
+        "other_class": "vase",
+        "other_bbox": [
+          112,
+          0,
+          258,
+          287
+        ],
+        "iou": 0.0513395664752002,
+        "center_dist_norm": 0.32734305579474493,
+        "weight": 2.0,
+        "message": "High Risk: cat near fragile object (vase)."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000016823.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          319,
+          166,
+          417,
+          252
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          265,
+          570,
+          375,
+          639
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          89,
+          171,
+          104,
+          184
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 0,
+    "top_warning": "No issues detected.",
+    "triggered": []
+  },
+  {
+    "image": "curated_yolo/images/test/000000025138.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          3,
+          1,
+          594,
+          386
+        ],
+        "conf": null
+      },
+      {
+        "class": "keyboard",
+        "bbox": [
+          238,
+          18,
+          639,
+          401
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          0,
+          0,
+          639,
+          416
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 62,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          3,
+          1,
+          594,
+          386
+        ],
+        "other_class": "keyboard",
+        "other_bbox": [
+          238,
+          18,
+          639,
+          401
+        ],
+        "iou": 0.5238015273279757,
+        "center_dist_norm": 0.18354800082484607,
+        "weight": 1.0,
+        "message": "Caution: cat on/near keyboard."
+      },
+      {
+        "cat_bbox": [
+          3,
+          1,
+          594,
+          386
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          0,
+          0,
+          639,
+          416
+        ],
+        "iou": 0.8559610870350307,
+        "center_dist_norm": 0.033241272816814944,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000026733.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          77,
+          65,
+          498,
+          376
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          0,
+          1,
+          639,
+          421
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 75,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          77,
+          65,
+          498,
+          376
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          0,
+          1,
+          639,
+          421
+        ],
+        "iou": 0.48785677025113644,
+        "center_dist_norm": 0.04335538876789741,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000040842.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          265,
+          4,
+          411,
+          111
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          2,
+          294,
+          472,
+          613
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 0,
+    "top_warning": "No issues detected.",
+    "triggered": []
+  },
+  {
+    "image": "curated_yolo/images/test/000000045197.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          0,
+          38,
+          396,
+          405
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          383,
+          1,
+          639,
+          474
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 75,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          0,
+          38,
+          396,
+          405
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          383,
+          1,
+          639,
+          474
+        ],
+        "iou": 0.01823435212823286,
+        "center_dist_norm": 0.39176084860537047,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000045721.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          160,
+          145,
+          639,
+          474
+        ],
+        "conf": null
+      },
+      {
+        "class": "keyboard",
+        "bbox": [
+          2,
+          408,
+          492,
+          475
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 50,
+    "top_warning": "Caution: cat on/near keyboard.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          160,
+          145,
+          639,
+          474
+        ],
+        "other_class": "keyboard",
+        "other_bbox": [
+          2,
+          408,
+          492,
+          475
+        ],
+        "iou": 0.13003459755858737,
+        "center_dist_norm": 0.25211681940124503,
+        "weight": 1.0,
+        "message": "Caution: cat on/near keyboard."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000052290.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          4,
+          0,
+          267,
+          475
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          234,
+          44,
+          639,
+          477
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 75,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          4,
+          0,
+          267,
+          475
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          234,
+          44,
+          639,
+          477
+        ],
+        "iou": 0.04971912174420678,
+        "center_dist_norm": 0.3773468232276509,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000054918.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          147,
+          62,
+          430,
+          274
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          493,
+          108,
+          578,
+          194
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          411,
+          135,
+          455,
+          188
+        ],
+        "conf": null
+      },
+      {
+        "class": "scissors",
+        "bbox": [
+          93,
+          131,
+          127,
+          139
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 33,
+    "top_warning": "Mischief Alert! Your cat is plotting against your drink!",
+    "triggered": [
+      {
+        "cat_bbox": [
+          147,
+          62,
+          430,
+          274
+        ],
+        "other_class": "cup",
+        "other_bbox": [
+          411,
+          135,
+          455,
+          188
+        ],
+        "iou": 0.016421780466724288,
+        "center_dist_norm": 0.1695632743499228,
+        "weight": 2.0,
+        "message": "Mischief Alert! Your cat is plotting against your drink!"
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000055466.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          262,
+          99,
+          519,
+          464
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          55,
+          106,
+          301,
+          412
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          0,
+          89,
+          173,
+          272
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 38,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          262,
+          99,
+          519,
+          464
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          55,
+          106,
+          301,
+          412
+        ],
+        "iou": 0.07594163426600571,
+        "center_dist_norm": 0.26710982057947624,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000057460.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          26,
+          152,
+          639,
+          454
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          70,
+          0,
+          504,
+          424
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 75,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          26,
+          152,
+          639,
+          454
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          70,
+          0,
+          504,
+          424
+        ],
+        "iou": 0.47013469059396085,
+        "center_dist_norm": 0.12717636622030054,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000060792.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          0,
+          2,
+          592,
+          575
+        ],
+        "conf": null
+      },
+      {
+        "class": "keyboard",
+        "bbox": [
+          1,
+          304,
+          639,
+          574
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 50,
+    "top_warning": "Caution: cat on/near keyboard.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          0,
+          2,
+          592,
+          575
+        ],
+        "other_class": "keyboard",
+        "other_bbox": [
+          1,
+          304,
+          639,
+          574
+        ],
+        "iou": 0.45344495405022933,
+        "center_dist_norm": 0.17631223503010904,
+        "weight": 1.0,
+        "message": "Caution: cat on/near keyboard."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000062237.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          116,
+          103,
+          374,
+          400
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          70,
+          31,
+          355,
+          239
+        ],
+        "conf": null
+      },
+      {
+        "class": "keyboard",
+        "bbox": [
+          0,
+          235,
+          143,
+          285
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 62,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          116,
+          103,
+          374,
+          400
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          70,
+          31,
+          355,
+          239
+        ],
+        "iou": 0.3143459507553045,
+        "center_dist_norm": 0.19351733772455634,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      },
+      {
+        "cat_bbox": [
+          116,
+          103,
+          374,
+          400
+        ],
+        "other_class": "keyboard",
+        "other_bbox": [
+          0,
+          235,
+          143,
+          285
+        ],
+        "iou": 0.016378327226845898,
+        "center_dist_norm": 0.27793294155245435,
+        "weight": 1.0,
+        "message": "Caution: cat on/near keyboard."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000069003.jpg",
+    "detections": [
+      {
+        "class": "plant",
+        "bbox": [
+          213,
+          1,
+          301,
+          90
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          246,
+          46,
+          572,
+          422
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          195,
+          324,
+          586,
+          469
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 88,
+    "top_warning": "High Risk: cat near fragile object (plant).",
+    "triggered": [
+      {
+        "cat_bbox": [
+          246,
+          46,
+          572,
+          422
+        ],
+        "other_class": "plant",
+        "other_bbox": [
+          213,
+          1,
+          301,
+          90
+        ],
+        "iou": 0.018908022627121292,
+        "center_dist_norm": 0.3049583635339327,
+        "weight": 2.0,
+        "message": "High Risk: cat near fragile object (plant)."
+      },
+      {
+        "cat_bbox": [
+          246,
+          46,
+          572,
+          422
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          195,
+          324,
+          586,
+          469
+        ],
+        "iou": 0.21685683837554218,
+        "center_dist_norm": 0.20597151855340168,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000076588.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          0,
+          116,
+          554,
+          417
+        ],
+        "conf": null
+      },
+      {
+        "class": "vase",
+        "bbox": [
+          15,
+          57,
+          61,
+          145
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 100,
+    "top_warning": "High Risk: cat near fragile object (vase).",
+    "triggered": [
+      {
+        "cat_bbox": [
+          0,
+          116,
+          554,
+          417
+        ],
+        "other_class": "vase",
+        "other_bbox": [
+          15,
+          57,
+          61,
+          145
+        ],
+        "iou": 0.007871692590931621,
+        "center_dist_norm": 0.3633852337740211,
+        "weight": 2.0,
+        "message": "High Risk: cat near fragile object (vase)."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000077396.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          231,
+          203,
+          393,
+          369
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          93,
+          345,
+          264,
+          479
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          141,
+          150,
+          237,
+          216
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 75,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          231,
+          203,
+          393,
+          369
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          141,
+          150,
+          237,
+          216
+        ],
+        "iou": 0.002352941176470588,
+        "center_dist_norm": 0.20053833798054677,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000082604.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          84,
+          127,
+          382,
+          356
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          259,
+          158,
+          594,
+          332
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 75,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          84,
+          127,
+          382,
+          356
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          259,
+          158,
+          594,
+          332
+        ],
+        "iou": 0.2035765243032436,
+        "center_dist_norm": 0.2515458710656104,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000092480.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          84,
+          70,
+          301,
+          281
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          190,
+          122,
+          422,
+          260
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          78,
+          2,
+          375,
+          310
+        ],
+        "conf": null
+      },
+      {
+        "class": "keyboard",
+        "bbox": [
+          147,
+          221,
+          442,
+          305
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 100,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          84,
+          70,
+          301,
+          281
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          78,
+          2,
+          375,
+          310
+        ],
+        "iou": 0.5005356596265688,
+        "center_dist_norm": 0.06271204031125123,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      },
+      {
+        "cat_bbox": [
+          84,
+          70,
+          301,
+          281
+        ],
+        "other_class": "keyboard",
+        "other_bbox": [
+          147,
+          221,
+          442,
+          305
+        ],
+        "iou": 0.1506677319940646,
+        "center_dist_norm": 0.21502148729836282,
+        "weight": 1.0,
+        "message": "Caution: cat on/near keyboard."
+      },
+      {
+        "cat_bbox": [
+          190,
+          122,
+          422,
+          260
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          78,
+          2,
+          375,
+          310
+        ],
+        "iou": 0.260611257426349,
+        "center_dist_norm": 0.138981437609488,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      },
+      {
+        "cat_bbox": [
+          190,
+          122,
+          422,
+          260
+        ],
+        "other_class": "keyboard",
+        "other_bbox": [
+          147,
+          221,
+          442,
+          305
+        ],
+        "iou": 0.18949484795174668,
+        "center_dist_norm": 0.11666019029643317,
+        "weight": 1.0,
+        "message": "Caution: cat on/near keyboard."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000095753.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          246,
+          116,
+          591,
+          542
+        ],
+        "conf": null
+      },
+      {
+        "class": "vase",
+        "bbox": [
+          111,
+          347,
+          276,
+          518
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 100,
+    "top_warning": "High Risk: cat near fragile object (vase).",
+    "triggered": [
+      {
+        "cat_bbox": [
+          246,
+          116,
+          591,
+          542
+        ],
+        "other_class": "vase",
+        "other_bbox": [
+          111,
+          347,
+          276,
+          518
+        ],
+        "iou": 0.030166710770044985,
+        "center_dist_norm": 0.2753476966066362,
+        "weight": 2.0,
+        "message": "High Risk: cat near fragile object (vase)."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000099108.jpg",
+    "detections": [
+      {
+        "class": "plant",
+        "bbox": [
+          21,
+          60,
+          49,
+          120
+        ],
+        "conf": null
+      },
+      {
+        "class": "plant",
+        "bbox": [
+          269,
+          41,
+          286,
+          91
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          202,
+          340,
+          273,
+          420
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 0,
+    "top_warning": "No issues detected.",
+    "triggered": []
+  },
+  {
+    "image": "curated_yolo/images/test/000000117108.jpg",
+    "detections": [
+      {
+        "class": "vase",
+        "bbox": [
+          1,
+          234,
+          147,
+          633
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          108,
+          110,
+          346,
+          639
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 100,
+    "top_warning": "High Risk: cat near fragile object (vase).",
+    "triggered": [
+      {
+        "cat_bbox": [
+          108,
+          110,
+          346,
+          639
+        ],
+        "other_class": "vase",
+        "other_bbox": [
+          1,
+          234,
+          147,
+          633
+        ],
+        "iou": 0.09229811085738011,
+        "center_dist_norm": 0.21344530219893182,
+        "weight": 2.0,
+        "message": "High Risk: cat near fragile object (vase)."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000119488.jpg",
+    "detections": [
+      {
+        "class": "plant",
+        "bbox": [
+          227,
+          165,
+          314,
+          308
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          442,
+          365,
+          511,
+          421
+        ],
+        "conf": null
+      },
+      {
+        "class": "vase",
+        "bbox": [
+          262,
+          255,
+          287,
+          308
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          104,
+          272,
+          111,
+          283
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 0,
+    "top_warning": "No issues detected.",
+    "triggered": []
+  },
+  {
+    "image": "curated_yolo/images/test/000000123921.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          341,
+          143,
+          452,
+          362
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          41,
+          274,
+          80,
+          323
+        ],
+        "conf": null
+      },
+      {
+        "class": "keyboard",
+        "bbox": [
+          184,
+          299,
+          375,
+          353
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          550,
+          216,
+          585,
+          259
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          491,
+          211,
+          515,
+          247
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          517,
+          216,
+          550,
+          259
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 10,
+    "top_warning": "Caution: cat on/near keyboard.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          341,
+          143,
+          452,
+          362
+        ],
+        "other_class": "keyboard",
+        "other_bbox": [
+          184,
+          299,
+          375,
+          353
+        ],
+        "iou": 0.055997804007685975,
+        "center_dist_norm": 0.17959009226855255,
+        "weight": 1.0,
+        "message": "Caution: cat on/near keyboard."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000128029.jpg",
+    "detections": [
+      {
+        "class": "plant",
+        "bbox": [
+          237,
+          72,
+          454,
+          421
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          64,
+          189,
+          350,
+          532
+        ],
+        "conf": null
+      },
+      {
+        "class": "plant",
+        "bbox": [
+          119,
+          99,
+          254,
+          454
+        ],
+        "conf": null
+      },
+      {
+        "class": "vase",
+        "bbox": [
+          164,
+          378,
+          187,
+          454
+        ],
+        "conf": null
+      },
+      {
+        "class": "vase",
+        "bbox": [
+          466,
+          288,
+          545,
+          465
+        ],
+        "conf": null
+      },
+      {
+        "class": "vase",
+        "bbox": [
+          342,
+          262,
+          418,
+          420
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 80,
+    "top_warning": "High Risk: cat near fragile object (plant).",
+    "triggered": [
+      {
+        "cat_bbox": [
+          64,
+          189,
+          350,
+          532
+        ],
+        "other_class": "plant",
+        "other_bbox": [
+          237,
+          72,
+          454,
+          421
+        ],
+        "iou": 0.17759712766317787,
+        "center_dist_norm": 0.2046384558421298,
+        "weight": 2.0,
+        "message": "High Risk: cat near fragile object (plant)."
+      },
+      {
+        "cat_bbox": [
+          64,
+          189,
+          350,
+          532
+        ],
+        "other_class": "plant",
+        "other_bbox": [
+          119,
+          99,
+          254,
+          454
+        ],
+        "iou": 0.32449568246135985,
+        "center_dist_norm": 0.09863883789594408,
+        "weight": 2.0,
+        "message": "High Risk: cat near fragile object (plant)."
+      },
+      {
+        "cat_bbox": [
+          64,
+          189,
+          350,
+          532
+        ],
+        "other_class": "vase",
+        "other_bbox": [
+          164,
+          378,
+          187,
+          454
+        ],
+        "iou": 0.01781891577809945,
+        "center_dist_norm": 0.07280087275907648,
+        "weight": 2.0,
+        "message": "High Risk: cat near fragile object (vase)."
+      },
+      {
+        "cat_bbox": [
+          64,
+          189,
+          350,
+          532
+        ],
+        "other_class": "vase",
+        "other_bbox": [
+          342,
+          262,
+          418,
+          420
+        ],
+        "iou": 0.011613164035942009,
+        "center_dist_norm": 0.19860658061057482,
+        "weight": 2.0,
+        "message": "High Risk: cat near fragile object (vase)."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000128346.jpg",
+    "detections": [
+      {
+        "class": "plant",
+        "bbox": [
+          150,
+          27,
+          267,
+          125
+        ],
+        "conf": null
+      },
+      {
+        "class": "plant",
+        "bbox": [
+          347,
+          62,
+          417,
+          86
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          95,
+          58,
+          499,
+          219
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 100,
+    "top_warning": "High Risk: cat near fragile object (plant).",
+    "triggered": [
+      {
+        "cat_bbox": [
+          95,
+          58,
+          499,
+          219
+        ],
+        "other_class": "plant",
+        "other_bbox": [
+          150,
+          27,
+          267,
+          125
+        ],
+        "iou": 0.11415299034526948,
+        "center_dist_norm": 0.17335097346135672,
+        "weight": 2.0,
+        "message": "High Risk: cat near fragile object (plant)."
+      },
+      {
+        "cat_bbox": [
+          95,
+          58,
+          499,
+          219
+        ],
+        "other_class": "plant",
+        "other_bbox": [
+          347,
+          62,
+          417,
+          86
+        ],
+        "iou": 0.02582866982350409,
+        "center_dist_norm": 0.17072269913517651,
+        "weight": 2.0,
+        "message": "High Risk: cat near fragile object (plant)."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000128429.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          229,
+          7,
+          639,
+          475
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          0,
+          3,
+          479,
+          473
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          0,
+          10,
+          175,
+          194
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 100,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          229,
+          7,
+          639,
+          475
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          0,
+          3,
+          479,
+          473
+        ],
+        "iou": 0.3876742870453562,
+        "center_dist_norm": 0.24315391858861746,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      },
+      {
+        "cat_bbox": [
+          0,
+          10,
+          175,
+          194
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          0,
+          3,
+          479,
+          473
+        ],
+        "iou": 0.14302847243814684,
+        "center_dist_norm": 0.25495097567963926,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000130506.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          200,
+          221,
+          231,
+          281
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          240,
+          245,
+          285,
+          277
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          427,
+          255,
+          445,
+          278
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 0,
+    "top_warning": "No issues detected.",
+    "triggered": []
+  },
+  {
+    "image": "curated_yolo/images/test/000000134882.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          273,
+          329,
+          424,
+          393
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          467,
+          383,
+          619,
+          426
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 0,
+    "top_warning": "No issues detected.",
+    "triggered": []
+  },
+  {
+    "image": "curated_yolo/images/test/000000136559.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          129,
+          6,
+          499,
+          200
+        ],
+        "conf": null
+      },
+      {
+        "class": "keyboard",
+        "bbox": [
+          0,
+          202,
+          408,
+          374
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 0,
+    "top_warning": "No issues detected.",
+    "triggered": []
+  },
+  {
+    "image": "curated_yolo/images/test/000000138161.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          171,
+          83,
+          568,
+          339
+        ],
+        "conf": null
+      },
+      {
+        "class": "keyboard",
+        "bbox": [
+          87,
+          283,
+          639,
+          353
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 50,
+    "top_warning": "Caution: cat on/near keyboard.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          171,
+          83,
+          568,
+          339
+        ],
+        "other_class": "keyboard",
+        "other_bbox": [
+          87,
+          283,
+          639,
+          353
+        ],
+        "iou": 0.1883429345984412,
+        "center_dist_norm": 0.14656856720161512,
+        "weight": 1.0,
+        "message": "Caution: cat on/near keyboard."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000145629.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          2,
+          119,
+          414,
+          354
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          228,
+          1,
+          639,
+          382
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 75,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          2,
+          119,
+          414,
+          354
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          228,
+          1,
+          639,
+          382
+        ],
+        "iou": 0.20843963548099437,
+        "center_dist_norm": 0.3031784167752591,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000157876.jpg",
+    "detections": [
+      {
+        "class": "laptop",
+        "bbox": [
+          1,
+          1,
+          202,
+          443
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          443,
+          55,
+          465,
+          77
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 0,
+    "top_warning": "No issues detected.",
+    "triggered": []
+  },
+  {
+    "image": "curated_yolo/images/test/000000159453.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          173,
+          129,
+          515,
+          287
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          22,
+          242,
+          276,
+          397
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 75,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          173,
+          129,
+          515,
+          287
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          22,
+          242,
+          276,
+          397
+        ],
+        "iou": 0.05221299748791835,
+        "center_dist_norm": 0.2917518053081491,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000164186.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          80,
+          259,
+          165,
+          416
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          423,
+          304,
+          449,
+          332
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          222,
+          165,
+          238,
+          185
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 0,
+    "top_warning": "No issues detected.",
+    "triggered": []
+  },
+  {
+    "image": "curated_yolo/images/test/000000168356.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          191,
+          142,
+          306,
+          199
+        ],
+        "conf": null
+      },
+      {
+        "class": "keyboard",
+        "bbox": [
+          196,
+          184,
+          317,
+          227
+        ],
+        "conf": null
+      },
+      {
+        "class": "scissors",
+        "bbox": [
+          225,
+          114,
+          244,
+          136
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 75,
+    "top_warning": "Danger: scissors close to pet!",
+    "triggered": [
+      {
+        "cat_bbox": [
+          191,
+          142,
+          306,
+          199
+        ],
+        "other_class": "keyboard",
+        "other_bbox": [
+          196,
+          184,
+          317,
+          227
+        ],
+        "iou": 0.1632370399683419,
+        "center_dist_norm": 0.06259710553693805,
+        "weight": 1.0,
+        "message": "Caution: cat on/near keyboard."
+      },
+      {
+        "cat_bbox": [
+          191,
+          142,
+          306,
+          199
+        ],
+        "other_class": "scissors",
+        "other_bbox": [
+          225,
+          114,
+          244,
+          136
+        ],
+        "iou": 0.0,
+        "center_dist_norm": 0.08300068984710003,
+        "weight": 2.0,
+        "message": "Danger: scissors close to pet!"
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000178798.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          1,
+          129,
+          376,
+          401
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          95,
+          88,
+          639,
+          475
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 75,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          1,
+          129,
+          376,
+          401
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          95,
+          88,
+          639,
+          475
+        ],
+        "iou": 0.32373271889400923,
+        "center_dist_norm": 0.22407622865890975,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000179392.jpg",
+    "detections": [
+      {
+        "class": "keyboard",
+        "bbox": [
+          389,
+          430,
+          479,
+          567
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          117,
+          42,
+          479,
+          593
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 50,
+    "top_warning": "Caution: cat on/near keyboard.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          117,
+          42,
+          479,
+          593
+        ],
+        "other_class": "keyboard",
+        "other_bbox": [
+          389,
+          430,
+          479,
+          567
+        ],
+        "iou": 0.06181628580882574,
+        "center_dist_norm": 0.28300011042400675,
+        "weight": 1.0,
+        "message": "Caution: cat on/near keyboard."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000180287.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          2,
+          0,
+          639,
+          394
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          108,
+          83,
+          480,
+          417
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 75,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          2,
+          0,
+          639,
+          394
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          108,
+          83,
+          480,
+          417
+        ],
+        "iou": 0.44576818451532363,
+        "center_dist_norm": 0.07724083183945293,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000203621.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          113,
+          171,
+          639,
+          529
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          62,
+          125,
+          447,
+          295
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          328,
+          107,
+          403,
+          161
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 100,
+    "top_warning": "Mischief Alert! Your cat is plotting against your drink!",
+    "triggered": [
+      {
+        "cat_bbox": [
+          62,
+          125,
+          447,
+          295
+        ],
+        "other_class": "cup",
+        "other_bbox": [
+          328,
+          107,
+          403,
+          161
+        ],
+        "iou": 0.040419161676646706,
+        "center_dist_norm": 0.15708849825656812,
+        "weight": 2.0,
+        "message": "Mischief Alert! Your cat is plotting against your drink!"
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000207077.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          110,
+          194,
+          423,
+          403
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          159,
+          53,
+          424,
+          414
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 75,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          110,
+          194,
+          423,
+          403
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          159,
+          53,
+          424,
+          414
+        ],
+        "iou": 0.5209903121636168,
+        "center_dist_norm": 0.08705242673240075,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000208640.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          14,
+          24,
+          465,
+          327
+        ],
+        "conf": null
+      },
+      {
+        "class": "keyboard",
+        "bbox": [
+          249,
+          219,
+          599,
+          338
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 50,
+    "top_warning": "Caution: cat on/near keyboard.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          14,
+          24,
+          465,
+          327
+        ],
+        "other_class": "keyboard",
+        "other_bbox": [
+          249,
+          219,
+          599,
+          338
+        ],
+        "iou": 0.1505275044361994,
+        "center_dist_norm": 0.28173825520231444,
+        "weight": 1.0,
+        "message": "Caution: cat on/near keyboard."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000212605.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          212,
+          53,
+          499,
+          358
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          0,
+          0,
+          366,
+          473
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 75,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          212,
+          53,
+          499,
+          358
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          0,
+          0,
+          366,
+          473
+        ],
+        "iou": 0.219811590065658,
+        "center_dist_norm": 0.2478598394254301,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000216925.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          255,
+          169,
+          316,
+          208
+        ],
+        "conf": null
+      },
+      {
+        "class": "vase",
+        "bbox": [
+          422,
+          269,
+          441,
+          311
+        ],
+        "conf": null
+      },
+      {
+        "class": "vase",
+        "bbox": [
+          403,
+          267,
+          420,
+          305
+        ],
+        "conf": null
+      },
+      {
+        "class": "vase",
+        "bbox": [
+          385,
+          278,
+          410,
+          309
+        ],
+        "conf": null
+      },
+      {
+        "class": "plant",
+        "bbox": [
+          411,
+          222,
+          455,
+          310
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 0,
+    "top_warning": "No issues detected.",
+    "triggered": []
+  },
+  {
+    "image": "curated_yolo/images/test/000000219059.jpg",
+    "detections": [
+      {
+        "class": "keyboard",
+        "bbox": [
+          32,
+          456,
+          426,
+          593
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          2,
+          207,
+          348,
+          466
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 50,
+    "top_warning": "Caution: cat on/near keyboard.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          2,
+          207,
+          348,
+          466
+        ],
+        "other_class": "keyboard",
+        "other_bbox": [
+          32,
+          456,
+          426,
+          593
+        ],
+        "iou": 0.022501993847556113,
+        "center_dist_norm": 0.2542363670813321,
+        "weight": 1.0,
+        "message": "Caution: cat on/near keyboard."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000220922.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          0,
+          51,
+          326,
+          412
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          249,
+          69,
+          639,
+          475
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 75,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          0,
+          51,
+          326,
+          412
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          249,
+          69,
+          639,
+          475
+        ],
+        "iou": 0.10580694269174529,
+        "center_dist_norm": 0.354879490989547,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000222659.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          17,
+          16,
+          629,
+          489
+        ],
+        "conf": null
+      },
+      {
+        "class": "plant",
+        "bbox": [
+          211,
+          1,
+          453,
+          87
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 100,
+    "top_warning": "High Risk: cat near fragile object (plant).",
+    "triggered": [
+      {
+        "cat_bbox": [
+          17,
+          16,
+          629,
+          489
+        ],
+        "other_class": "plant",
+        "other_bbox": [
+          211,
+          1,
+          453,
+          87
+        ],
+        "iou": 0.05862043083389627,
+        "center_dist_norm": 0.2569626252634657,
+        "weight": 2.0,
+        "message": "High Risk: cat near fragile object (plant)."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000226597.jpg",
+    "detections": [
+      {
+        "class": "cup",
+        "bbox": [
+          375,
+          265,
+          445,
+          331
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          394,
+          60,
+          473,
+          104
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 0,
+    "top_warning": "No issues detected.",
+    "triggered": []
+  },
+  {
+    "image": "curated_yolo/images/test/000000228211.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          244,
+          185,
+          410,
+          346
+        ],
+        "conf": null
+      },
+      {
+        "class": "keyboard",
+        "bbox": [
+          42,
+          246,
+          207,
+          295
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          205,
+          157,
+          242,
+          190
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          220,
+          8,
+          259,
+          43
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          181,
+          9,
+          219,
+          46
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          132,
+          5,
+          174,
+          43
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          212,
+          265,
+          258,
+          313
+        ],
+        "conf": null
+      },
+      {
+        "class": "keyboard",
+        "bbox": [
+          238,
+          211,
+          352,
+          257
+        ],
+        "conf": null
+      },
+      {
+        "class": "keyboard",
+        "bbox": [
+          190,
+          213,
+          248,
+          253
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 25,
+    "top_warning": "Mischief Alert! Your cat is plotting against your drink!",
+    "triggered": [
+      {
+        "cat_bbox": [
+          244,
+          185,
+          410,
+          346
+        ],
+        "other_class": "cup",
+        "other_bbox": [
+          212,
+          265,
+          258,
+          313
+        ],
+        "iou": 0.023777510438044016,
+        "center_dist_norm": 0.15192629792106435,
+        "weight": 2.0,
+        "message": "Mischief Alert! Your cat is plotting against your drink!"
+      },
+      {
+        "cat_bbox": [
+          244,
+          185,
+          410,
+          346
+        ],
+        "other_class": "keyboard",
+        "other_bbox": [
+          238,
+          211,
+          352,
+          257
+        ],
+        "iou": 0.1839863713798978,
+        "center_dist_norm": 0.0718442760420063,
+        "weight": 1.0,
+        "message": "Caution: cat on/near keyboard."
+      },
+      {
+        "cat_bbox": [
+          244,
+          185,
+          410,
+          346
+        ],
+        "other_class": "keyboard",
+        "other_bbox": [
+          190,
+          213,
+          248,
+          253
+        ],
+        "iou": 0.005539015440005539,
+        "center_dist_norm": 0.18045453721089974,
+        "weight": 1.0,
+        "message": "Caution: cat on/near keyboard."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000248461.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          0,
+          8,
+          639,
+          474
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          502,
+          0,
+          639,
+          331
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 100,
+    "top_warning": "Mischief Alert! Your cat is plotting against your drink!",
+    "triggered": [
+      {
+        "cat_bbox": [
+          0,
+          8,
+          639,
+          474
+        ],
+        "other_class": "cup",
+        "other_bbox": [
+          502,
+          0,
+          639,
+          331
+        ],
+        "iou": 0.1480610298792117,
+        "center_dist_norm": 0.32763654119313373,
+        "weight": 2.0,
+        "message": "Mischief Alert! Your cat is plotting against your drink!"
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000248755.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          33,
+          2,
+          639,
+          527
+        ],
+        "conf": null
+      },
+      {
+        "class": "keyboard",
+        "bbox": [
+          0,
+          265,
+          200,
+          481
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 50,
+    "top_warning": "Caution: cat on/near keyboard.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          33,
+          2,
+          639,
+          527
+        ],
+        "other_class": "keyboard",
+        "other_bbox": [
+          0,
+          265,
+          200,
+          481
+        ],
+        "iou": 0.11089591057495435,
+        "center_dist_norm": 0.31114708516970885,
+        "weight": 1.0,
+        "message": "Caution: cat on/near keyboard."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000272250.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          56,
+          26,
+          566,
+          386
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          0,
+          8,
+          639,
+          420
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 75,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          56,
+          26,
+          566,
+          386
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          0,
+          8,
+          639,
+          420
+        ],
+        "iou": 0.6973882127717763,
+        "center_dist_norm": 0.015160726704684997,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000274323.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          1,
+          32,
+          639,
+          473
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          157,
+          1,
+          517,
+          202
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 75,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          1,
+          32,
+          639,
+          473
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          157,
+          1,
+          517,
+          202
+        ],
+        "iou": 0.2092178942834287,
+        "center_dist_norm": 0.19022738553968507,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000276006.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          178,
+          392,
+          392,
+          488
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          207,
+          200,
+          344,
+          330
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          129,
+          309,
+          385,
+          440
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 38,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          178,
+          392,
+          392,
+          488
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          129,
+          309,
+          385,
+          440
+        ],
+        "iou": 0.22508155128669807,
+        "center_dist_norm": 0.0925872364399622,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000287649.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          137,
+          4,
+          639,
+          402
+        ],
+        "conf": null
+      },
+      {
+        "class": "keyboard",
+        "bbox": [
+          1,
+          396,
+          639,
+          479
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 50,
+    "top_warning": "Caution: cat on/near keyboard.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          137,
+          4,
+          639,
+          402
+        ],
+        "other_class": "keyboard",
+        "other_bbox": [
+          1,
+          396,
+          639,
+          479
+        ],
+        "iou": 0.01206063955024866,
+        "center_dist_norm": 0.30520036963444197,
+        "weight": 1.0,
+        "message": "Caution: cat on/near keyboard."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000304315.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          312,
+          246,
+          379,
+          283
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          381,
+          350,
+          406,
+          378
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 0,
+    "top_warning": "No issues detected.",
+    "triggered": []
+  },
+  {
+    "image": "curated_yolo/images/test/000000320649.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          178,
+          0,
+          639,
+          333
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          97,
+          11,
+          639,
+          462
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 75,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          178,
+          0,
+          639,
+          333
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          97,
+          11,
+          639,
+          462
+        ],
+        "iou": 0.594926917635554,
+        "center_dist_norm": 0.10108976518421635,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000322870.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          24,
+          52,
+          639,
+          471
+        ],
+        "conf": null
+      },
+      {
+        "class": "keyboard",
+        "bbox": [
+          1,
+          1,
+          433,
+          233
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 50,
+    "top_warning": "Caution: cat on/near keyboard.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          24,
+          52,
+          639,
+          471
+        ],
+        "other_class": "keyboard",
+        "other_bbox": [
+          1,
+          1,
+          433,
+          233
+        ],
+        "iou": 0.2607756798647316,
+        "center_dist_norm": 0.23045640856786778,
+        "weight": 1.0,
+        "message": "Caution: cat on/near keyboard."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000327769.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          201,
+          116,
+          452,
+          260
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          260,
+          2,
+          322,
+          84
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          307,
+          0,
+          362,
+          71
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 0,
+    "top_warning": "No issues detected.",
+    "triggered": []
+  },
+  {
+    "image": "curated_yolo/images/test/000000327864.jpg",
+    "detections": [
+      {
+        "class": "cup",
+        "bbox": [
+          13,
+          381,
+          133,
+          499
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          92,
+          199,
+          226,
+          422
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          1,
+          345,
+          107,
+          474
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          12,
+          379,
+          114,
+          463
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 83,
+    "top_warning": "Mischief Alert! Your cat is plotting against your drink!",
+    "triggered": [
+      {
+        "cat_bbox": [
+          92,
+          199,
+          226,
+          422
+        ],
+        "other_class": "cup",
+        "other_bbox": [
+          13,
+          381,
+          133,
+          499
+        ],
+        "iou": 0.03968272703666108,
+        "center_dist_norm": 0.2487279638480563,
+        "weight": 2.0,
+        "message": "Mischief Alert! Your cat is plotting against your drink!"
+      },
+      {
+        "cat_bbox": [
+          92,
+          199,
+          226,
+          422
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          1,
+          345,
+          107,
+          474
+        ],
+        "iou": 0.027239923586707862,
+        "center_dist_norm": 0.2308994586394693,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      },
+      {
+        "cat_bbox": [
+          92,
+          199,
+          226,
+          422
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          12,
+          379,
+          114,
+          463
+        ],
+        "iou": 0.025223976109215018,
+        "center_dist_norm": 0.23420333046308286,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000334732.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          218,
+          90,
+          434,
+          329
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          513,
+          244,
+          639,
+          426
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 0,
+    "top_warning": "No issues detected.",
+    "triggered": []
+  },
+  {
+    "image": "curated_yolo/images/test/000000346614.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          82,
+          155,
+          435,
+          368
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          23,
+          293,
+          617,
+          431
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 75,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          82,
+          155,
+          435,
+          368
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          23,
+          293,
+          617,
+          431
+        ],
+        "iou": 0.2025848216335338,
+        "center_dist_norm": 0.15037775935971107,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000353594.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          87,
+          108,
+          388,
+          440
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          0,
+          37,
+          338,
+          284
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 75,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          87,
+          108,
+          388,
+          440
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          0,
+          37,
+          338,
+          284
+        ],
+        "iou": 0.31726059665905404,
+        "center_dist_norm": 0.1899335416420076,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000353968.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          13,
+          67,
+          199,
+          205
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          104,
+          203,
+          364,
+          323
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 75,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          13,
+          67,
+          199,
+          205
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          104,
+          203,
+          364,
+          323
+        ],
+        "iou": 0.003352270722326123,
+        "center_dist_norm": 0.30015231658142416,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000363415.jpg",
+    "detections": [
+      {
+        "class": "plant",
+        "bbox": [
+          389,
+          55,
+          596,
+          355
+        ],
+        "conf": null
+      },
+      {
+        "class": "plant",
+        "bbox": [
+          0,
+          2,
+          99,
+          271
+        ],
+        "conf": null
+      },
+      {
+        "class": "plant",
+        "bbox": [
+          554,
+          41,
+          639,
+          324
+        ],
+        "conf": null
+      },
+      {
+        "class": "plant",
+        "bbox": [
+          0,
+          313,
+          297,
+          479
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          66,
+          160,
+          403,
+          402
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 75,
+    "top_warning": "High Risk: cat near fragile object (plant).",
+    "triggered": [
+      {
+        "cat_bbox": [
+          66,
+          160,
+          403,
+          402
+        ],
+        "other_class": "plant",
+        "other_bbox": [
+          389,
+          55,
+          596,
+          355
+        ],
+        "iou": 0.01937214385058613,
+        "center_dist_norm": 0.336201204637937,
+        "weight": 2.0,
+        "message": "High Risk: cat near fragile object (plant)."
+      },
+      {
+        "cat_bbox": [
+          66,
+          160,
+          403,
+          402
+        ],
+        "other_class": "plant",
+        "other_bbox": [
+          0,
+          2,
+          99,
+          271
+        ],
+        "iou": 0.035045253630814566,
+        "center_dist_norm": 0.29343134311964697,
+        "weight": 2.0,
+        "message": "High Risk: cat near fragile object (plant)."
+      },
+      {
+        "cat_bbox": [
+          66,
+          160,
+          403,
+          402
+        ],
+        "other_class": "plant",
+        "other_bbox": [
+          0,
+          313,
+          297,
+          479
+        ],
+        "iou": 0.1863967288321532,
+        "center_dist_norm": 0.17950017409462307,
+        "weight": 2.0,
+        "message": "High Risk: cat near fragile object (plant)."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000363933.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          170,
+          31,
+          522,
+          372
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          266,
+          303,
+          454,
+          470
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 100,
+    "top_warning": "Mischief Alert! Your cat is plotting against your drink!",
+    "triggered": [
+      {
+        "cat_bbox": [
+          170,
+          31,
+          522,
+          372
+        ],
+        "other_class": "cup",
+        "other_bbox": [
+          266,
+          303,
+          454,
+          470
+        ],
+        "iou": 0.093690414283238,
+        "center_dist_norm": 0.23191121684817229,
+        "weight": 2.0,
+        "message": "Mischief Alert! Your cat is plotting against your drink!"
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000364297.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          22,
+          92,
+          635,
+          405
+        ],
+        "conf": null
+      },
+      {
+        "class": "keyboard",
+        "bbox": [
+          1,
+          263,
+          406,
+          421
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 50,
+    "top_warning": "Caution: cat on/near keyboard.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          22,
+          92,
+          635,
+          405
+        ],
+        "other_class": "keyboard",
+        "other_bbox": [
+          1,
+          263,
+          406,
+          421
+        ],
+        "iou": 0.2708375759321714,
+        "center_dist_norm": 0.20274727369163914,
+        "weight": 1.0,
+        "message": "Caution: cat on/near keyboard."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000372870.jpg",
+    "detections": [
+      {
+        "class": "plant",
+        "bbox": [
+          190,
+          1,
+          639,
+          351
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          217,
+          115,
+          340,
+          356
+        ],
+        "conf": null
+      },
+      {
+        "class": "vase",
+        "bbox": [
+          407,
+          183,
+          584,
+          352
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 50,
+    "top_warning": "High Risk: cat near fragile object (plant).",
+    "triggered": [
+      {
+        "cat_bbox": [
+          217,
+          115,
+          340,
+          356
+        ],
+        "other_class": "plant",
+        "other_bbox": [
+          190,
+          1,
+          639,
+          351
+        ],
+        "iou": 0.18399518270845877,
+        "center_dist_norm": 0.19572256974226987,
+        "weight": 2.0,
+        "message": "High Risk: cat near fragile object (plant)."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000377867.jpg",
+    "detections": [
+      {
+        "class": "plant",
+        "bbox": [
+          530,
+          130,
+          620,
+          243
+        ],
+        "conf": null
+      },
+      {
+        "class": "plant",
+        "bbox": [
+          140,
+          2,
+          383,
+          262
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          231,
+          268,
+          268,
+          309
+        ],
+        "conf": null
+      },
+      {
+        "class": "plant",
+        "bbox": [
+          312,
+          187,
+          390,
+          272
+        ],
+        "conf": null
+      },
+      {
+        "class": "plant",
+        "bbox": [
+          45,
+          169,
+          144,
+          273
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 25,
+    "top_warning": "High Risk: cat near fragile object (plant).",
+    "triggered": [
+      {
+        "cat_bbox": [
+          231,
+          268,
+          268,
+          309
+        ],
+        "other_class": "plant",
+        "other_bbox": [
+          312,
+          187,
+          390,
+          272
+        ],
+        "iou": 0.0,
+        "center_dist_norm": 0.14675260857988182,
+        "weight": 2.0,
+        "message": "High Risk: cat near fragile object (plant)."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000380117.jpg",
+    "detections": [
+      {
+        "class": "plant",
+        "bbox": [
+          292,
+          303,
+          370,
+          392
+        ],
+        "conf": null
+      },
+      {
+        "class": "plant",
+        "bbox": [
+          328,
+          159,
+          568,
+          474
+        ],
+        "conf": null
+      },
+      {
+        "class": "plant",
+        "bbox": [
+          449,
+          14,
+          639,
+          391
+        ],
+        "conf": null
+      },
+      {
+        "class": "plant",
+        "bbox": [
+          107,
+          11,
+          244,
+          191
+        ],
+        "conf": null
+      },
+      {
+        "class": "plant",
+        "bbox": [
+          2,
+          59,
+          243,
+          298
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          210,
+          191,
+          385,
+          286
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 60,
+    "top_warning": "High Risk: cat near fragile object (plant).",
+    "triggered": [
+      {
+        "cat_bbox": [
+          210,
+          191,
+          385,
+          286
+        ],
+        "other_class": "plant",
+        "other_bbox": [
+          292,
+          303,
+          370,
+          392
+        ],
+        "iou": 0.0,
+        "center_dist_norm": 0.14253974226509603,
+        "weight": 2.0,
+        "message": "High Risk: cat near fragile object (plant)."
+      },
+      {
+        "cat_bbox": [
+          210,
+          191,
+          385,
+          286
+        ],
+        "other_class": "plant",
+        "other_bbox": [
+          328,
+          159,
+          568,
+          474
+        ],
+        "iou": 0.06237760626655915,
+        "center_dist_norm": 0.21188974874920213,
+        "weight": 2.0,
+        "message": "High Risk: cat near fragile object (plant)."
+      },
+      {
+        "cat_bbox": [
+          210,
+          191,
+          385,
+          286
+        ],
+        "other_class": "plant",
+        "other_bbox": [
+          2,
+          59,
+          243,
+          298
+        ],
+        "iou": 0.04409964973483943,
+        "center_dist_norm": 0.23125,
+        "weight": 2.0,
+        "message": "High Risk: cat near fragile object (plant)."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000383406.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          1,
+          239,
+          364,
+          448
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          277,
+          139,
+          589,
+          445
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          58,
+          216,
+          362,
+          310
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          341,
+          250,
+          639,
+          439
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          309,
+          206,
+          464,
+          328
+        ],
+        "conf": null
+      },
+      {
+        "class": "keyboard",
+        "bbox": [
+          176,
+          412,
+          559,
+          475
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 100,
+    "top_warning": "Caution: cat on/near keyboard.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          1,
+          239,
+          364,
+          448
+        ],
+        "other_class": "keyboard",
+        "other_bbox": [
+          176,
+          412,
+          559,
+          475
+        ],
+        "iou": 0.07259621572918007,
+        "center_dist_norm": 0.26287176056016365,
+        "weight": 1.0,
+        "message": "Caution: cat on/near keyboard."
+      },
+      {
+        "cat_bbox": [
+          277,
+          139,
+          589,
+          445
+        ],
+        "other_class": "keyboard",
+        "other_bbox": [
+          176,
+          412,
+          559,
+          475
+        ],
+        "iou": 0.08437372501019992,
+        "center_dist_norm": 0.206316277229888,
+        "weight": 1.0,
+        "message": "Caution: cat on/near keyboard."
+      },
+      {
+        "cat_bbox": [
+          341,
+          250,
+          639,
+          439
+        ],
+        "other_class": "keyboard",
+        "other_bbox": [
+          176,
+          412,
+          559,
+          475
+        ],
+        "iou": 0.07893783946891973,
+        "center_dist_norm": 0.19687896821397657,
+        "weight": 1.0,
+        "message": "Caution: cat on/near keyboard."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000388753.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          117,
+          392,
+          264,
+          626
+        ],
+        "conf": null
+      },
+      {
+        "class": "plant",
+        "bbox": [
+          256,
+          142,
+          274,
+          177
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 0,
+    "top_warning": "No issues detected.",
+    "triggered": []
+  },
+  {
+    "image": "curated_yolo/images/test/000000396042.jpg",
+    "detections": [
+      {
+        "class": "plant",
+        "bbox": [
+          257,
+          239,
+          374,
+          415
+        ],
+        "conf": null
+      },
+      {
+        "class": "plant",
+        "bbox": [
+          299,
+          62,
+          374,
+          247
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          102,
+          138,
+          244,
+          394
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 0,
+    "top_warning": "No issues detected.",
+    "triggered": []
+  },
+  {
+    "image": "curated_yolo/images/test/000000401681.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          116,
+          179,
+          290,
+          236
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          289,
+          314,
+          337,
+          374
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          453,
+          326,
+          499,
+          374
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 0,
+    "top_warning": "No issues detected.",
+    "triggered": []
+  },
+  {
+    "image": "curated_yolo/images/test/000000405225.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          58,
+          66,
+          639,
+          475
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          112,
+          28,
+          152,
+          94
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          331,
+          1,
+          601,
+          128
+        ],
+        "conf": null
+      },
+      {
+        "class": "keyboard",
+        "bbox": [
+          1,
+          109,
+          87,
+          161
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 75,
+    "top_warning": "Mischief Alert! Your cat is plotting against your drink!",
+    "triggered": [
+      {
+        "cat_bbox": [
+          58,
+          66,
+          639,
+          475
+        ],
+        "other_class": "cup",
+        "other_bbox": [
+          112,
+          28,
+          152,
+          94
+        ],
+        "iou": 0.004683272771368477,
+        "center_dist_norm": 0.3765851912250401,
+        "weight": 2.0,
+        "message": "Mischief Alert! Your cat is plotting against your drink!"
+      },
+      {
+        "cat_bbox": [
+          58,
+          66,
+          639,
+          475
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          331,
+          1,
+          601,
+          128
+        ],
+        "iou": 0.06560100948745783,
+        "center_dist_norm": 0.2964431068940548,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      },
+      {
+        "cat_bbox": [
+          58,
+          66,
+          639,
+          475
+        ],
+        "other_class": "keyboard",
+        "other_bbox": [
+          1,
+          109,
+          87,
+          161
+        ],
+        "iou": 0.006267846529200766,
+        "center_dist_norm": 0.41660926687965066,
+        "weight": 1.0,
+        "message": "Caution: cat on/near keyboard."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000414102.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          183,
+          0,
+          639,
+          474
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          1,
+          16,
+          289,
+          300
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 100,
+    "top_warning": "Mischief Alert! Your cat is plotting against your drink!",
+    "triggered": [
+      {
+        "cat_bbox": [
+          183,
+          0,
+          639,
+          474
+        ],
+        "other_class": "cup",
+        "other_bbox": [
+          1,
+          16,
+          289,
+          300
+        ],
+        "iou": 0.1123988171689716,
+        "center_dist_norm": 0.34685416604100344,
+        "weight": 2.0,
+        "message": "Mischief Alert! Your cat is plotting against your drink!"
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000416256.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          118,
+          86,
+          369,
+          240
+        ],
+        "conf": null
+      },
+      {
+        "class": "keyboard",
+        "bbox": [
+          122,
+          211,
+          315,
+          313
+        ],
+        "conf": null
+      },
+      {
+        "class": "keyboard",
+        "bbox": [
+          29,
+          124,
+          138,
+          228
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 50,
+    "top_warning": "Caution: cat on/near keyboard.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          118,
+          86,
+          369,
+          240
+        ],
+        "other_class": "keyboard",
+        "other_bbox": [
+          122,
+          211,
+          315,
+          313
+        ],
+        "iou": 0.1061183474584305,
+        "center_dist_norm": 0.1633724578991208,
+        "weight": 1.0,
+        "message": "Caution: cat on/near keyboard."
+      },
+      {
+        "cat_bbox": [
+          118,
+          86,
+          369,
+          240
+        ],
+        "other_class": "keyboard",
+        "other_bbox": [
+          29,
+          124,
+          138,
+          228
+        ],
+        "iou": 0.04341473596326446,
+        "center_dist_norm": 0.2568436100042203,
+        "weight": 1.0,
+        "message": "Caution: cat on/near keyboard."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000416663.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          0,
+          1,
+          222,
+          394
+        ],
+        "conf": null
+      },
+      {
+        "class": "keyboard",
+        "bbox": [
+          143,
+          0,
+          374,
+          499
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 50,
+    "top_warning": "Caution: cat on/near keyboard.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          0,
+          1,
+          222,
+          394
+        ],
+        "other_class": "keyboard",
+        "other_bbox": [
+          143,
+          0,
+          374,
+          499
+        ],
+        "iou": 0.18106585485338372,
+        "center_dist_norm": 0.2502363682600912,
+        "weight": 1.0,
+        "message": "Caution: cat on/near keyboard."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000418799.jpg",
+    "detections": [
+      {
+        "class": "keyboard",
+        "bbox": [
+          0,
+          191,
+          499,
+          370
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          152,
+          33,
+          466,
+          283
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 50,
+    "top_warning": "Caution: cat on/near keyboard.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          152,
+          33,
+          466,
+          283
+        ],
+        "other_class": "keyboard",
+        "other_bbox": [
+          0,
+          191,
+          499,
+          370
+        ],
+        "iou": 0.2079275622062433,
+        "center_dist_norm": 0.21789685633344966,
+        "weight": 1.0,
+        "message": "Caution: cat on/near keyboard."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000425441.jpg",
+    "detections": [
+      {
+        "class": "cup",
+        "bbox": [
+          534,
+          219,
+          559,
+          261
+        ],
+        "conf": null
+      },
+      {
+        "class": "vase",
+        "bbox": [
+          299,
+          218,
+          318,
+          282
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          418,
+          205,
+          465,
+          244
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 0,
+    "top_warning": "No issues detected.",
+    "triggered": []
+  },
+  {
+    "image": "curated_yolo/images/test/000000433240.jpg",
+    "detections": [
+      {
+        "class": "plant",
+        "bbox": [
+          258,
+          2,
+          479,
+          639
+        ],
+        "conf": null
+      },
+      {
+        "class": "plant",
+        "bbox": [
+          0,
+          244,
+          287,
+          631
+        ],
+        "conf": null
+      },
+      {
+        "class": "plant",
+        "bbox": [
+          150,
+          350,
+          285,
+          498
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          167,
+          195,
+          362,
+          415
+        ],
+        "conf": null
+      },
+      {
+        "class": "plant",
+        "bbox": [
+          0,
+          352,
+          138,
+          546
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 75,
+    "top_warning": "High Risk: cat near fragile object (plant).",
+    "triggered": [
+      {
+        "cat_bbox": [
+          167,
+          195,
+          362,
+          415
+        ],
+        "other_class": "plant",
+        "other_bbox": [
+          258,
+          2,
+          479,
+          639
+        ],
+        "iou": 0.14229121190071953,
+        "center_dist_norm": 0.13143588028008182,
+        "weight": 2.0,
+        "message": "High Risk: cat near fragile object (plant)."
+      },
+      {
+        "cat_bbox": [
+          167,
+          195,
+          362,
+          415
+        ],
+        "other_class": "plant",
+        "other_bbox": [
+          0,
+          244,
+          287,
+          631
+        ],
+        "iou": 0.15376660746802148,
+        "center_dist_norm": 0.22429490213778824,
+        "weight": 2.0,
+        "message": "High Risk: cat near fragile object (plant)."
+      },
+      {
+        "cat_bbox": [
+          167,
+          195,
+          362,
+          415
+        ],
+        "other_class": "plant",
+        "other_bbox": [
+          150,
+          350,
+          285,
+          498
+        ],
+        "iou": 0.13892410795145807,
+        "center_dist_norm": 0.15993162601561955,
+        "weight": 2.0,
+        "message": "High Risk: cat near fragile object (plant)."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000437102.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          466,
+          143,
+          584,
+          254
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          372,
+          451,
+          535,
+          479
+        ],
+        "conf": null
+      },
+      {
+        "class": "vase",
+        "bbox": [
+          51,
+          167,
+          78,
+          220
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 0,
+    "top_warning": "No issues detected.",
+    "triggered": []
+  },
+  {
+    "image": "curated_yolo/images/test/000000439132.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          72,
+          77,
+          530,
+          303
+        ],
+        "conf": null
+      },
+      {
+        "class": "plant",
+        "bbox": [
+          1,
+          1,
+          146,
+          266
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 100,
+    "top_warning": "High Risk: cat near fragile object (plant).",
+    "triggered": [
+      {
+        "cat_bbox": [
+          72,
+          77,
+          530,
+          303
+        ],
+        "other_class": "plant",
+        "other_bbox": [
+          1,
+          1,
+          146,
+          266
+        ],
+        "iou": 0.10931088653895754,
+        "center_dist_norm": 0.3046794141968699,
+        "weight": 2.0,
+        "message": "High Risk: cat near fragile object (plant)."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000440057.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          55,
+          159,
+          540,
+          418
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          112,
+          0,
+          402,
+          155
+        ],
+        "conf": null
+      },
+      {
+        "class": "keyboard",
+        "bbox": [
+          440,
+          116,
+          605,
+          152
+        ],
+        "conf": null
+      },
+      {
+        "class": "keyboard",
+        "bbox": [
+          189,
+          106,
+          368,
+          153
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 0,
+    "top_warning": "No issues detected.",
+    "triggered": []
+  },
+  {
+    "image": "curated_yolo/images/test/000000453676.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          96,
+          64,
+          449,
+          257
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          1,
+          60,
+          53,
+          134
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          142,
+          195,
+          467,
+          374
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 38,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          96,
+          64,
+          449,
+          257
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          142,
+          195,
+          467,
+          374
+        ],
+        "iou": 0.17744010440943414,
+        "center_dist_norm": 0.20489997559785114,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000456438.jpg",
+    "detections": [
+      {
+        "class": "plant",
+        "bbox": [
+          372,
+          31,
+          441,
+          135
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          118,
+          10,
+          235,
+          89
+        ],
+        "conf": null
+      },
+      {
+        "class": "plant",
+        "bbox": [
+          515,
+          2,
+          601,
+          111
+        ],
+        "conf": null
+      },
+      {
+        "class": "vase",
+        "bbox": [
+          457,
+          63,
+          498,
+          134
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 0,
+    "top_warning": "No issues detected.",
+    "triggered": []
+  },
+  {
+    "image": "curated_yolo/images/test/000000464443.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          104,
+          294,
+          190,
+          352
+        ],
+        "conf": null
+      },
+      {
+        "class": "vase",
+        "bbox": [
+          274,
+          42,
+          323,
+          151
+        ],
+        "conf": null
+      },
+      {
+        "class": "vase",
+        "bbox": [
+          235,
+          65,
+          267,
+          149
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 0,
+    "top_warning": "No issues detected.",
+    "triggered": []
+  },
+  {
+    "image": "curated_yolo/images/test/000000491250.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          113,
+          44,
+          541,
+          350
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          240,
+          244,
+          639,
+          434
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 75,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          113,
+          44,
+          541,
+          350
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          240,
+          244,
+          639,
+          434
+        ],
+        "iou": 0.18245345166750537,
+        "center_dist_norm": 0.2264545001208852,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000491269.jpg",
+    "detections": [
+      {
+        "class": "vase",
+        "bbox": [
+          224,
+          395,
+          279,
+          424
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          401,
+          134,
+          447,
+          149
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 0,
+    "top_warning": "No issues detected.",
+    "triggered": []
+  },
+  {
+    "image": "curated_yolo/images/test/000000492810.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          86,
+          250,
+          276,
+          469
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          299,
+          114,
+          371,
+          244
+        ],
+        "conf": null
+      },
+      {
+        "class": "vase",
+        "bbox": [
+          0,
+          366,
+          35,
+          508
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 0,
+    "top_warning": "No issues detected.",
+    "triggered": []
+  },
+  {
+    "image": "curated_yolo/images/test/000000504517.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          0,
+          10,
+          330,
+          298
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          189,
+          0,
+          499,
+          374
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 75,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          0,
+          10,
+          330,
+          298
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          189,
+          0,
+          499,
+          374
+        ],
+        "iou": 0.23834902448759185,
+        "center_dist_norm": 0.2912263724321683,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000507212.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          66,
+          58,
+          383,
+          475
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          253,
+          50,
+          593,
+          469
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 75,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          66,
+          58,
+          383,
+          475
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          253,
+          50,
+          593,
+          469
+        ],
+        "iou": 0.2415253662660079,
+        "center_dist_norm": 0.24827923417998535,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000515136.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          190,
+          28,
+          572,
+          430
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          494,
+          127,
+          518,
+          146
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          516,
+          129,
+          532,
+          146
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 100,
+    "top_warning": "Mischief Alert! Your cat is plotting against your drink!",
+    "triggered": [
+      {
+        "cat_bbox": [
+          190,
+          28,
+          572,
+          430
+        ],
+        "other_class": "cup",
+        "other_bbox": [
+          494,
+          127,
+          518,
+          146
+        ],
+        "iou": 0.0029694459638977887,
+        "center_dist_norm": 0.1983212565111932,
+        "weight": 2.0,
+        "message": "Mischief Alert! Your cat is plotting against your drink!"
+      },
+      {
+        "cat_bbox": [
+          190,
+          28,
+          572,
+          430
+        ],
+        "other_class": "cup",
+        "other_bbox": [
+          516,
+          129,
+          532,
+          146
+        ],
+        "iou": 0.0017712484696934176,
+        "center_dist_norm": 0.21651415684615147,
+        "weight": 2.0,
+        "message": "Mischief Alert! Your cat is plotting against your drink!"
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000518324.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          149,
+          52,
+          367,
+          357
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          47,
+          6,
+          227,
+          237
+        ],
+        "conf": null
+      },
+      {
+        "class": "scissors",
+        "bbox": [
+          309,
+          181,
+          372,
+          307
+        ],
+        "conf": null
+      },
+      {
+        "class": "plant",
+        "bbox": [
+          1,
+          1,
+          63,
+          126
+        ],
+        "conf": null
+      },
+      {
+        "class": "cup",
+        "bbox": [
+          303,
+          117,
+          409,
+          316
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 69,
+    "top_warning": "Danger: scissors close to pet!",
+    "triggered": [
+      {
+        "cat_bbox": [
+          149,
+          52,
+          367,
+          357
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          47,
+          6,
+          227,
+          237
+        ],
+        "iou": 0.15410081161896624,
+        "center_dist_norm": 0.23476967436191584,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      },
+      {
+        "cat_bbox": [
+          149,
+          52,
+          367,
+          357
+        ],
+        "other_class": "scissors",
+        "other_bbox": [
+          309,
+          181,
+          372,
+          307
+        ],
+        "iou": 0.10887961859356377,
+        "center_dist_norm": 0.14634971814117032,
+        "weight": 2.0,
+        "message": "Danger: scissors close to pet!"
+      },
+      {
+        "cat_bbox": [
+          149,
+          52,
+          367,
+          357
+        ],
+        "other_class": "cup",
+        "other_bbox": [
+          303,
+          117,
+          409,
+          316
+        ],
+        "iou": 0.17015818725951262,
+        "center_dist_norm": 0.1579711366041278,
+        "weight": 2.0,
+        "message": "Mischief Alert! Your cat is plotting against your drink!"
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000523536.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          150,
+          195,
+          340,
+          524
+        ],
+        "conf": null
+      },
+      {
+        "class": "keyboard",
+        "bbox": [
+          269,
+          234,
+          425,
+          267
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 50,
+    "top_warning": "Caution: cat on/near keyboard.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          150,
+          195,
+          340,
+          524
+        ],
+        "other_class": "keyboard",
+        "other_bbox": [
+          269,
+          234,
+          425,
+          267
+        ],
+        "iou": 0.0358723111077088,
+        "center_dist_norm": 0.1649344389162706,
+        "weight": 1.0,
+        "message": "Caution: cat on/near keyboard."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000529649.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          115,
+          3,
+          373,
+          209
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          0,
+          163,
+          374,
+          499
+        ],
+        "conf": null
+      },
+      {
+        "class": "keyboard",
+        "bbox": [
+          38,
+          221,
+          303,
+          491
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 38,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          115,
+          3,
+          373,
+          209
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          0,
+          163,
+          374,
+          499
+        ],
+        "iou": 0.0710897067280046,
+        "center_dist_norm": 0.37137237377058624,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000530730.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          175,
+          29,
+          451,
+          368
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          152,
+          290,
+          459,
+          436
+        ],
+        "conf": null
+      },
+      {
+        "class": "keyboard",
+        "bbox": [
+          0,
+          246,
+          108,
+          397
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 38,
+    "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+    "triggered": [
+      {
+        "cat_bbox": [
+          175,
+          29,
+          451,
+          368
+        ],
+        "other_class": "laptop",
+        "other_bbox": [
+          152,
+          290,
+          459,
+          436
+        ],
+        "iou": 0.18422358760204693,
+        "center_dist_norm": 0.24479780810053986,
+        "weight": 1.5,
+        "message": "Warning: cat near laptop \u2014 risk to device or cables."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000542946.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          203,
+          124,
+          402,
+          252
+        ],
+        "conf": null
+      },
+      {
+        "class": "plant",
+        "bbox": [
+          215,
+          206,
+          412,
+          384
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 100,
+    "top_warning": "High Risk: cat near fragile object (plant).",
+    "triggered": [
+      {
+        "cat_bbox": [
+          203,
+          124,
+          402,
+          252
+        ],
+        "other_class": "plant",
+        "other_bbox": [
+          215,
+          206,
+          412,
+          384
+        ],
+        "iou": 0.16562692544670363,
+        "center_dist_norm": 0.13445491809524857,
+        "weight": 2.0,
+        "message": "High Risk: cat near fragile object (plant)."
+      }
+    ]
+  },
+  {
+    "image": "curated_yolo/images/test/000000549115.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          203,
+          226,
+          387,
+          476
+        ],
+        "conf": null
+      },
+      {
+        "class": "laptop",
+        "bbox": [
+          392,
+          314,
+          639,
+          479
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 0,
+    "top_warning": "No issues detected.",
+    "triggered": []
+  },
+  {
+    "image": "curated_yolo/images/test/000000568062.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          61,
+          340,
+          272,
+          501
+        ],
+        "conf": null
+      },
+      {
+        "class": "keyboard",
+        "bbox": [
+          279,
+          476,
+          518,
+          553
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 0,
+    "top_warning": "No issues detected.",
+    "triggered": []
+  },
+  {
+    "image": "curated_yolo/images/test/000000580002.jpg",
+    "detections": [
+      {
+        "class": "cat",
+        "bbox": [
+          227,
+          191,
+          429,
+          355
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          199,
+          143,
+          302,
+          316
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          40,
+          319,
+          197,
+          433
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          396,
+          292,
+          580,
+          432
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          193,
+          315,
+          363,
+          426
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          352,
+          117,
+          443,
+          330
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          11,
+          124,
+          155,
+          322
+        ],
+        "conf": null
+      },
+      {
+        "class": "cat",
+        "bbox": [
+          222,
+          131,
+          339,
+          255
+        ],
+        "conf": null
+      },
+      {
+        "class": "plant",
+        "bbox": [
+          550,
+          1,
+          639,
+          56
+        ],
+        "conf": null
+      },
+      {
+        "class": "plant",
+        "bbox": [
+          468,
+          1,
+          527,
+          40
+        ],
+        "conf": null
+      }
+    ],
+    "mischief_score": 0,
+    "top_warning": "No issues detected.",
+    "triggered": []
+  }
+]

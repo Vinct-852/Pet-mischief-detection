@@ -1,0 +1,138 @@
+{
+  "image": "curated_yolo/images/train/000000309044.jpg",
+  "detections": [
+    {
+      "class": "plant",
+      "bbox": [
+        96,
+        1,
+        274,
+        71
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        479,
+        35,
+        499,
+        55
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        550,
+        21,
+        577,
+        49
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        580,
+        9,
+        608,
+        55
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        502,
+        30,
+        525,
+        42
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        59,
+        0,
+        123,
+        21
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        288,
+        153,
+        353,
+        251
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        390,
+        104,
+        451,
+        128
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        512,
+        0,
+        552,
+        37
+      ],
+      "conf": null
+    },
+    {
+      "class": "vase",
+      "bbox": [
+        220,
+        32,
+        253,
+        68
+      ],
+      "conf": null
+    },
+    {
+      "class": "vase",
+      "bbox": [
+        135,
+        34,
+        148,
+        58
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 11,
+  "top_warning": "High Risk: cat near fragile object (plant).",
+  "triggered": [
+    {
+      "cat_bbox": [
+        390,
+        104,
+        451,
+        128
+      ],
+      "other_class": "plant",
+      "other_bbox": [
+        479,
+        35,
+        499,
+        55
+      ],
+      "iou": 0.0,
+      "center_dist_norm": 0.12823132517982733,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (plant)."
+    }
+  ]
+}

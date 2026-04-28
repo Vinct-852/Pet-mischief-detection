@@ -1,0 +1,78 @@
+{
+  "image": "curated_yolo/images/val/000000234475.jpg",
+  "detections": [
+    {
+      "class": "cat",
+      "bbox": [
+        282,
+        111,
+        461,
+        361
+      ],
+      "conf": null
+    },
+    {
+      "class": "keyboard",
+      "bbox": [
+        145,
+        356,
+        405,
+        422
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        521,
+        0,
+        639,
+        307
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        0,
+        335,
+        16,
+        412
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        0,
+        271,
+        16,
+        335
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 12,
+  "top_warning": "Caution: cat on/near keyboard.",
+  "triggered": [
+    {
+      "cat_bbox": [
+        282,
+        111,
+        461,
+        361
+      ],
+      "other_class": "keyboard",
+      "other_bbox": [
+        145,
+        356,
+        405,
+        422
+      ],
+      "iou": 0.010033444816053512,
+      "center_dist_norm": 0.22611270005242962,
+      "weight": 1.0,
+      "message": "Caution: cat on/near keyboard."
+    }
+  ]
+}

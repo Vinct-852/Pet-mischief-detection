@@ -1,0 +1,28 @@
+{
+  "image": "curated_yolo/images/val/000000443509.jpg",
+  "detections": [
+    {
+      "class": "cat",
+      "bbox": [
+        318,
+        89,
+        615,
+        366
+      ],
+      "conf": null
+    },
+    {
+      "class": "keyboard",
+      "bbox": [
+        0,
+        279,
+        140,
+        422
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 0,
+  "top_warning": "No issues detected.",
+  "triggered": []
+}

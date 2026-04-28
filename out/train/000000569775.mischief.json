@@ -1,0 +1,58 @@
+{
+  "image": "curated_yolo/images/train/000000569775.jpg",
+  "detections": [
+    {
+      "class": "cat",
+      "bbox": [
+        355,
+        35,
+        479,
+        106
+      ],
+      "conf": null
+    },
+    {
+      "class": "scissors",
+      "bbox": [
+        338,
+        90,
+        388,
+        124
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        256,
+        68,
+        287,
+        98
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 50,
+  "top_warning": "Danger: scissors close to pet!",
+  "triggered": [
+    {
+      "cat_bbox": [
+        355,
+        35,
+        479,
+        106
+      ],
+      "other_class": "scissors",
+      "other_bbox": [
+        338,
+        90,
+        388,
+        124
+      ],
+      "iou": 0.05292702485966319,
+      "center_dist_norm": 0.0814732509784653,
+      "weight": 2.0,
+      "message": "Danger: scissors close to pet!"
+    }
+  ]
+}

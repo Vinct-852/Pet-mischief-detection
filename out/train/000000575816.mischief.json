@@ -1,0 +1,48 @@
+{
+  "image": "curated_yolo/images/train/000000575816.jpg",
+  "detections": [
+    {
+      "class": "cat",
+      "bbox": [
+        61,
+        1,
+        420,
+        456
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        207,
+        350,
+        320,
+        484
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 100,
+  "top_warning": "Mischief Alert! Your cat is plotting against your drink!",
+  "triggered": [
+    {
+      "cat_bbox": [
+        61,
+        1,
+        420,
+        456
+      ],
+      "other_class": "cup",
+      "other_bbox": [
+        207,
+        350,
+        320,
+        484
+      ],
+      "iou": 0.07193605150472347,
+      "center_dist_norm": 0.2468229732458879,
+      "weight": 2.0,
+      "message": "Mischief Alert! Your cat is plotting against your drink!"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "image": "curated_yolo/images/test/000000363415.jpg",
+  "detections": [
+    {
+      "class": "plant",
+      "bbox": [
+        389,
+        55,
+        596,
+        355
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        0,
+        2,
+        99,
+        271
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        554,
+        41,
+        639,
+        324
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        0,
+        313,
+        297,
+        479
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        66,
+        160,
+        403,
+        402
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 75,
+  "top_warning": "High Risk: cat near fragile object (plant).",
+  "triggered": [
+    {
+      "cat_bbox": [
+        66,
+        160,
+        403,
+        402
+      ],
+      "other_class": "plant",
+      "other_bbox": [
+        389,
+        55,
+        596,
+        355
+      ],
+      "iou": 0.01937214385058613,
+      "center_dist_norm": 0.336201204637937,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (plant)."
+    },
+    {
+      "cat_bbox": [
+        66,
+        160,
+        403,
+        402
+      ],
+      "other_class": "plant",
+      "other_bbox": [
+        0,
+        2,
+        99,
+        271
+      ],
+      "iou": 0.035045253630814566,
+      "center_dist_norm": 0.29343134311964697,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (plant)."
+    },
+    {
+      "cat_bbox": [
+        66,
+        160,
+        403,
+        402
+      ],
+      "other_class": "plant",
+      "other_bbox": [
+        0,
+        313,
+        297,
+        479
+      ],
+      "iou": 0.1863967288321532,
+      "center_dist_norm": 0.17950017409462307,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (plant)."
+    }
+  ]
+}

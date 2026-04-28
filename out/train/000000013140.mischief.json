@@ -1,0 +1,48 @@
+{
+  "image": "curated_yolo/images/train/000000013140.jpg",
+  "detections": [
+    {
+      "class": "cat",
+      "bbox": [
+        16,
+        71,
+        140,
+        142
+      ],
+      "conf": null
+    },
+    {
+      "class": "laptop",
+      "bbox": [
+        242,
+        52,
+        537,
+        360
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        193,
+        144,
+        252,
+        217
+      ],
+      "conf": null
+    },
+    {
+      "class": "keyboard",
+      "bbox": [
+        246,
+        190,
+        541,
+        360
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 0,
+  "top_warning": "No issues detected.",
+  "triggered": []
+}

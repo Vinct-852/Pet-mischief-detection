@@ -1,0 +1,228 @@
+{
+  "image": "curated_yolo/images/train/000000222043.jpg",
+  "detections": [
+    {
+      "class": "cat",
+      "bbox": [
+        3,
+        295,
+        71,
+        341
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        477,
+        413,
+        534,
+        470
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        509,
+        63,
+        524,
+        81
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        500,
+        48,
+        510,
+        59
+      ],
+      "conf": null
+    },
+    {
+      "class": "vase",
+      "bbox": [
+        99,
+        435,
+        183,
+        603
+      ],
+      "conf": null
+    },
+    {
+      "class": "vase",
+      "bbox": [
+        373,
+        408,
+        429,
+        521
+      ],
+      "conf": null
+    },
+    {
+      "class": "vase",
+      "bbox": [
+        152,
+        174,
+        172,
+        220
+      ],
+      "conf": null
+    },
+    {
+      "class": "vase",
+      "bbox": [
+        429,
+        228,
+        470,
+        284
+      ],
+      "conf": null
+    },
+    {
+      "class": "vase",
+      "bbox": [
+        97,
+        107,
+        131,
+        147
+      ],
+      "conf": null
+    },
+    {
+      "class": "vase",
+      "bbox": [
+        169,
+        397,
+        240,
+        567
+      ],
+      "conf": null
+    },
+    {
+      "class": "vase",
+      "bbox": [
+        130,
+        184,
+        171,
+        253
+      ],
+      "conf": null
+    },
+    {
+      "class": "vase",
+      "bbox": [
+        208,
+        163,
+        263,
+        269
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        490,
+        400,
+        553,
+        454
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        358,
+        186,
+        397,
+        239
+      ],
+      "conf": null
+    },
+    {
+      "class": "vase",
+      "bbox": [
+        300,
+        151,
+        359,
+        257
+      ],
+      "conf": null
+    },
+    {
+      "class": "vase",
+      "bbox": [
+        143,
+        487,
+        230,
+        611
+      ],
+      "conf": null
+    },
+    {
+      "class": "vase",
+      "bbox": [
+        135,
+        373,
+        185,
+        435
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        480,
+        47,
+        494,
+        60
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        468,
+        432,
+        540,
+        504
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        254,
+        165,
+        292,
+        215
+      ],
+      "conf": null
+    },
+    {
+      "class": "vase",
+      "bbox": [
+        527,
+        279,
+        611,
+        385
+      ],
+      "conf": null
+    },
+    {
+      "class": "vase",
+      "bbox": [
+        77,
+        65,
+        424,
+        315
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 0,
+  "top_warning": "No issues detected.",
+  "triggered": []
+}

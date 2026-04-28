@@ -1,0 +1,116 @@
+{
+  "image": "curated_yolo/images/train/000000357470.jpg",
+  "detections": [
+    {
+      "class": "cat",
+      "bbox": [
+        356,
+        96,
+        451,
+        261
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        435,
+        242,
+        556,
+        361
+      ],
+      "conf": null
+    },
+    {
+      "class": "laptop",
+      "bbox": [
+        36,
+        42,
+        463,
+        419
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        464,
+        222,
+        544,
+        276
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        407,
+        217,
+        474,
+        294
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 69,
+  "top_warning": "Mischief Alert! Your cat is plotting against your drink!",
+  "triggered": [
+    {
+      "cat_bbox": [
+        356,
+        96,
+        451,
+        261
+      ],
+      "other_class": "cup",
+      "other_bbox": [
+        435,
+        242,
+        556,
+        361
+      ],
+      "iou": 0.010211622438696675,
+      "center_dist_norm": 0.2002200889512563,
+      "weight": 2.0,
+      "message": "Mischief Alert! Your cat is plotting against your drink!"
+    },
+    {
+      "cat_bbox": [
+        356,
+        96,
+        451,
+        261
+      ],
+      "other_class": "laptop",
+      "other_bbox": [
+        36,
+        42,
+        463,
+        419
+      ],
+      "iou": 0.09737294926667453,
+      "center_dist_norm": 0.21187634514332715,
+      "weight": 1.5,
+      "message": "Warning: cat near laptop \u2014 risk to device or cables."
+    },
+    {
+      "cat_bbox": [
+        356,
+        96,
+        451,
+        261
+      ],
+      "other_class": "cup",
+      "other_bbox": [
+        407,
+        217,
+        474,
+        294
+      ],
+      "iou": 0.10244470314318975,
+      "center_dist_norm": 0.11135712135309492,
+      "weight": 2.0,
+      "message": "Mischief Alert! Your cat is plotting against your drink!"
+    }
+  ]
+}

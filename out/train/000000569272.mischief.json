@@ -1,0 +1,97 @@
+{
+  "image": "curated_yolo/images/train/000000569272.jpg",
+  "detections": [
+    {
+      "class": "cat",
+      "bbox": [
+        97,
+        68,
+        293,
+        276
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        176,
+        377,
+        299,
+        460
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        304,
+        290,
+        432,
+        408
+      ],
+      "conf": null
+    },
+    {
+      "class": "keyboard",
+      "bbox": [
+        135,
+        136,
+        334,
+        342
+      ],
+      "conf": null
+    },
+    {
+      "class": "scissors",
+      "bbox": [
+        282,
+        231,
+        351,
+        306
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 38,
+  "top_warning": "Danger: scissors close to pet!",
+  "triggered": [
+    {
+      "cat_bbox": [
+        97,
+        68,
+        293,
+        276
+      ],
+      "other_class": "keyboard",
+      "other_bbox": [
+        135,
+        136,
+        334,
+        342
+      ],
+      "iou": 0.3708795815029677,
+      "center_dist_norm": 0.09736701123861016,
+      "weight": 1.0,
+      "message": "Caution: cat on/near keyboard."
+    },
+    {
+      "cat_bbox": [
+        97,
+        68,
+        293,
+        276
+      ],
+      "other_class": "scissors",
+      "other_bbox": [
+        282,
+        231,
+        351,
+        306
+      ],
+      "iou": 0.010891568385847561,
+      "center_dist_norm": 0.19424046570439554,
+      "weight": 2.0,
+      "message": "Danger: scissors close to pet!"
+    }
+  ]
+}

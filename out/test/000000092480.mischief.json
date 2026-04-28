@@ -1,0 +1,125 @@
+{
+  "image": "curated_yolo/images/test/000000092480.jpg",
+  "detections": [
+    {
+      "class": "cat",
+      "bbox": [
+        84,
+        70,
+        301,
+        281
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        190,
+        122,
+        422,
+        260
+      ],
+      "conf": null
+    },
+    {
+      "class": "laptop",
+      "bbox": [
+        78,
+        2,
+        375,
+        310
+      ],
+      "conf": null
+    },
+    {
+      "class": "keyboard",
+      "bbox": [
+        147,
+        221,
+        442,
+        305
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 100,
+  "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+  "triggered": [
+    {
+      "cat_bbox": [
+        84,
+        70,
+        301,
+        281
+      ],
+      "other_class": "laptop",
+      "other_bbox": [
+        78,
+        2,
+        375,
+        310
+      ],
+      "iou": 0.5005356596265688,
+      "center_dist_norm": 0.06271204031125123,
+      "weight": 1.5,
+      "message": "Warning: cat near laptop \u2014 risk to device or cables."
+    },
+    {
+      "cat_bbox": [
+        84,
+        70,
+        301,
+        281
+      ],
+      "other_class": "keyboard",
+      "other_bbox": [
+        147,
+        221,
+        442,
+        305
+      ],
+      "iou": 0.1506677319940646,
+      "center_dist_norm": 0.21502148729836282,
+      "weight": 1.0,
+      "message": "Caution: cat on/near keyboard."
+    },
+    {
+      "cat_bbox": [
+        190,
+        122,
+        422,
+        260
+      ],
+      "other_class": "laptop",
+      "other_bbox": [
+        78,
+        2,
+        375,
+        310
+      ],
+      "iou": 0.260611257426349,
+      "center_dist_norm": 0.138981437609488,
+      "weight": 1.5,
+      "message": "Warning: cat near laptop \u2014 risk to device or cables."
+    },
+    {
+      "cat_bbox": [
+        190,
+        122,
+        422,
+        260
+      ],
+      "other_class": "keyboard",
+      "other_bbox": [
+        147,
+        221,
+        442,
+        305
+      ],
+      "iou": 0.18949484795174668,
+      "center_dist_norm": 0.11666019029643317,
+      "weight": 1.0,
+      "message": "Caution: cat on/near keyboard."
+    }
+  ]
+}

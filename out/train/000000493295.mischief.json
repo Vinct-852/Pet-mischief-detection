@@ -1,0 +1,77 @@
+{
+  "image": "curated_yolo/images/train/000000493295.jpg",
+  "detections": [
+    {
+      "class": "plant",
+      "bbox": [
+        11,
+        2,
+        159,
+        170
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        27,
+        52,
+        630,
+        359
+      ],
+      "conf": null
+    },
+    {
+      "class": "laptop",
+      "bbox": [
+        0,
+        233,
+        277,
+        442
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 88,
+  "top_warning": "High Risk: cat near fragile object (plant).",
+  "triggered": [
+    {
+      "cat_bbox": [
+        27,
+        52,
+        630,
+        359
+      ],
+      "other_class": "plant",
+      "other_bbox": [
+        11,
+        2,
+        159,
+        170
+      ],
+      "iou": 0.08011974754255204,
+      "center_dist_norm": 0.33905313927170766,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (plant)."
+    },
+    {
+      "cat_bbox": [
+        27,
+        52,
+        630,
+        359
+      ],
+      "other_class": "laptop",
+      "other_bbox": [
+        0,
+        233,
+        277,
+        442
+      ],
+      "iou": 0.14892631220628422,
+      "center_dist_norm": 0.2891906810393447,
+      "weight": 1.5,
+      "message": "Warning: cat near laptop \u2014 risk to device or cables."
+    }
+  ]
+}
