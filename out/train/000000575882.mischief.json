@@ -1,0 +1,97 @@
+{
+  "image": "curated_yolo/images/train/000000575882.jpg",
+  "detections": [
+    {
+      "class": "cup",
+      "bbox": [
+        56,
+        304,
+        106,
+        351
+      ],
+      "conf": null
+    },
+    {
+      "class": "laptop",
+      "bbox": [
+        319,
+        158,
+        476,
+        276
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        218,
+        213,
+        309,
+        271
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        49,
+        278,
+        91,
+        324
+      ],
+      "conf": null
+    },
+    {
+      "class": "vase",
+      "bbox": [
+        166,
+        88,
+        228,
+        232
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 44,
+  "top_warning": "High Risk: cat near fragile object (vase).",
+  "triggered": [
+    {
+      "cat_bbox": [
+        218,
+        213,
+        309,
+        271
+      ],
+      "other_class": "laptop",
+      "other_bbox": [
+        319,
+        158,
+        476,
+        276
+      ],
+      "iou": 0.0,
+      "center_dist_norm": 0.17704607582183982,
+      "weight": 1.5,
+      "message": "Warning: cat near laptop \u2014 risk to device or cables."
+    },
+    {
+      "cat_bbox": [
+        218,
+        213,
+        309,
+        271
+      ],
+      "other_class": "vase",
+      "other_bbox": [
+        166,
+        88,
+        228,
+        232
+      ],
+      "iou": 0.01355593607305936,
+      "center_dist_norm": 0.1371248461579114,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (vase)."
+    }
+  ]
+}

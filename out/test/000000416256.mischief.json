@@ -1,0 +1,77 @@
+{
+  "image": "curated_yolo/images/test/000000416256.jpg",
+  "detections": [
+    {
+      "class": "cat",
+      "bbox": [
+        118,
+        86,
+        369,
+        240
+      ],
+      "conf": null
+    },
+    {
+      "class": "keyboard",
+      "bbox": [
+        122,
+        211,
+        315,
+        313
+      ],
+      "conf": null
+    },
+    {
+      "class": "keyboard",
+      "bbox": [
+        29,
+        124,
+        138,
+        228
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 50,
+  "top_warning": "Caution: cat on/near keyboard.",
+  "triggered": [
+    {
+      "cat_bbox": [
+        118,
+        86,
+        369,
+        240
+      ],
+      "other_class": "keyboard",
+      "other_bbox": [
+        122,
+        211,
+        315,
+        313
+      ],
+      "iou": 0.1061183474584305,
+      "center_dist_norm": 0.1633724578991208,
+      "weight": 1.0,
+      "message": "Caution: cat on/near keyboard."
+    },
+    {
+      "cat_bbox": [
+        118,
+        86,
+        369,
+        240
+      ],
+      "other_class": "keyboard",
+      "other_bbox": [
+        29,
+        124,
+        138,
+        228
+      ],
+      "iou": 0.04341473596326446,
+      "center_dist_norm": 0.2568436100042203,
+      "weight": 1.0,
+      "message": "Caution: cat on/near keyboard."
+    }
+  ]
+}

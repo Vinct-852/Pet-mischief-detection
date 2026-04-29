@@ -1,0 +1,244 @@
+{
+  "image": "curated_yolo/images/train/000000075344.jpg",
+  "detections": [
+    {
+      "class": "plant",
+      "bbox": [
+        212,
+        107,
+        247,
+        197
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        340,
+        148,
+        370,
+        245
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        165,
+        182,
+        230,
+        247
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        275,
+        81,
+        332,
+        222
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        382,
+        257,
+        412,
+        290
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        434,
+        176,
+        497,
+        233
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        379,
+        181,
+        423,
+        228
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        0,
+        227,
+        16,
+        284
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        70,
+        93,
+        159,
+        188
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        193,
+        118,
+        214,
+        193
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        61,
+        211,
+        128,
+        299
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        132,
+        80,
+        195,
+        141
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        392,
+        112,
+        417,
+        176
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        20,
+        82,
+        419,
+        262
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 38,
+  "top_warning": "High Risk: cat near fragile object (plant).",
+  "triggered": [
+    {
+      "cat_bbox": [
+        379,
+        181,
+        423,
+        228
+      ],
+      "other_class": "plant",
+      "other_bbox": [
+        340,
+        148,
+        370,
+        245
+      ],
+      "iou": 0.0,
+      "center_dist_norm": 0.07470475219154402,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (plant)."
+    },
+    {
+      "cat_bbox": [
+        379,
+        181,
+        423,
+        228
+      ],
+      "other_class": "plant",
+      "other_bbox": [
+        382,
+        257,
+        412,
+        290
+      ],
+      "iou": 0.0,
+      "center_dist_norm": 0.11058535165201583,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (plant)."
+    },
+    {
+      "cat_bbox": [
+        379,
+        181,
+        423,
+        228
+      ],
+      "other_class": "plant",
+      "other_bbox": [
+        434,
+        176,
+        497,
+        233
+      ],
+      "iou": 0.0,
+      "center_dist_norm": 0.1032,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (plant)."
+    },
+    {
+      "cat_bbox": [
+        379,
+        181,
+        423,
+        228
+      ],
+      "other_class": "plant",
+      "other_bbox": [
+        392,
+        112,
+        417,
+        176
+      ],
+      "iou": 0.0,
+      "center_dist_norm": 0.0969618481672044,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (plant)."
+    },
+    {
+      "cat_bbox": [
+        379,
+        181,
+        423,
+        228
+      ],
+      "other_class": "plant",
+      "other_bbox": [
+        20,
+        82,
+        419,
+        262
+      ],
+      "iou": 0.026108210198866794,
+      "center_dist_norm": 0.2950189146478578,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (plant)."
+    }
+  ]
+}

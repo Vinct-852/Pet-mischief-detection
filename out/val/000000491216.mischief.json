@@ -1,0 +1,58 @@
+{
+  "image": "curated_yolo/images/val/000000491216.jpg",
+  "detections": [
+    {
+      "class": "plant",
+      "bbox": [
+        270,
+        181,
+        299,
+        243
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        207,
+        171,
+        246,
+        246
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        166,
+        186,
+        187,
+        244
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        236,
+        198,
+        275,
+        244
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        180,
+        423,
+        271,
+        516
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 0,
+  "top_warning": "No issues detected.",
+  "triggered": []
+}

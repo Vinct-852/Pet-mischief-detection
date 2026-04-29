@@ -1,0 +1,38 @@
+{
+  "image": "curated_yolo/images/train/000000567049.jpg",
+  "detections": [
+    {
+      "class": "plant",
+      "bbox": [
+        1,
+        0,
+        170,
+        618
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        520,
+        320,
+        555,
+        474
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        205,
+        399,
+        289,
+        494
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 0,
+  "top_warning": "No issues detected.",
+  "triggered": []
+}

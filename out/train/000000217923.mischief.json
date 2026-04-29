@@ -1,0 +1,48 @@
+{
+  "image": "curated_yolo/images/train/000000217923.jpg",
+  "detections": [
+    {
+      "class": "cat",
+      "bbox": [
+        0,
+        1,
+        390,
+        367
+      ],
+      "conf": null
+    },
+    {
+      "class": "keyboard",
+      "bbox": [
+        333,
+        57,
+        499,
+        324
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 50,
+  "top_warning": "Caution: cat on/near keyboard.",
+  "triggered": [
+    {
+      "cat_bbox": [
+        0,
+        1,
+        390,
+        367
+      ],
+      "other_class": "keyboard",
+      "other_bbox": [
+        333,
+        57,
+        499,
+        324
+      ],
+      "iou": 0.08856339798537037,
+      "center_dist_norm": 0.35375290811525495,
+      "weight": 1.0,
+      "message": "Caution: cat on/near keyboard."
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "image": "curated_yolo/images/train/000000100586.jpg",
+  "detections": [
+    {
+      "class": "cat",
+      "bbox": [
+        448,
+        166,
+        616,
+        279
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        266,
+        220,
+        293,
+        257
+      ],
+      "conf": null
+    },
+    {
+      "class": "keyboard",
+      "bbox": [
+        296,
+        244,
+        452,
+        301
+      ],
+      "conf": null
+    },
+    {
+      "class": "scissors",
+      "bbox": [
+        477,
+        158,
+        500,
+        193
+      ],
+      "conf": null
+    },
+    {
+      "class": "scissors",
+      "bbox": [
+        498,
+        165,
+        520,
+        179
+      ],
+      "conf": null
+    },
+    {
+      "class": "keyboard",
+      "bbox": [
+        151,
+        302,
+        258,
+        356
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 50,
+  "top_warning": "Danger: scissors close to pet!",
+  "triggered": [
+    {
+      "cat_bbox": [
+        448,
+        166,
+        616,
+        279
+      ],
+      "other_class": "keyboard",
+      "other_bbox": [
+        296,
+        244,
+        452,
+        301
+      ],
+      "iou": 0.005047591577732911,
+      "center_dist_norm": 0.22568721297603503,
+      "weight": 1.0,
+      "message": "Caution: cat on/near keyboard."
+    },
+    {
+      "cat_bbox": [
+        448,
+        166,
+        616,
+        279
+      ],
+      "other_class": "scissors",
+      "other_bbox": [
+        477,
+        158,
+        500,
+        193
+      ],
+      "iou": 0.03239774624373957,
+      "center_dist_norm": 0.08721339241208163,
+      "weight": 2.0,
+      "message": "Danger: scissors close to pet!"
+    },
+    {
+      "cat_bbox": [
+        448,
+        166,
+        616,
+        279
+      ],
+      "other_class": "scissors",
+      "other_bbox": [
+        498,
+        165,
+        520,
+        179
+      ],
+      "iou": 0.015047879616963064,
+      "center_dist_norm": 0.07556967131430391,
+      "weight": 2.0,
+      "message": "Danger: scissors close to pet!"
+    }
+  ]
+}

@@ -1,0 +1,320 @@
+{
+  "image": "curated_yolo/images/val/000000300415.jpg",
+  "detections": [
+    {
+      "class": "cat",
+      "bbox": [
+        166,
+        112,
+        222,
+        240
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        113,
+        119,
+        157,
+        150
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        254,
+        156,
+        274,
+        182
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        271,
+        126,
+        298,
+        153
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        290,
+        167,
+        304,
+        182
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        271,
+        167,
+        287,
+        186
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        195,
+        113,
+        228,
+        147
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        69,
+        95,
+        120,
+        145
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        42,
+        118,
+        63,
+        145
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        228,
+        117,
+        255,
+        139
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        55,
+        148,
+        75,
+        164
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        32,
+        146,
+        60,
+        179
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        143,
+        39,
+        203,
+        152
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        251,
+        133,
+        267,
+        149
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 69,
+  "top_warning": "High Risk: cat near fragile object (plant).",
+  "triggered": [
+    {
+      "cat_bbox": [
+        166,
+        112,
+        222,
+        240
+      ],
+      "other_class": "plant",
+      "other_bbox": [
+        113,
+        119,
+        157,
+        150
+      ],
+      "iou": 0.0,
+      "center_dist_norm": 0.09016694585600646,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (plant)."
+    },
+    {
+      "cat_bbox": [
+        166,
+        112,
+        222,
+        240
+      ],
+      "other_class": "cup",
+      "other_bbox": [
+        254,
+        156,
+        274,
+        182
+      ],
+      "iou": 0.0,
+      "center_dist_norm": 0.08793641168480779,
+      "weight": 2.0,
+      "message": "Mischief Alert! Your cat is plotting against your drink!"
+    },
+    {
+      "cat_bbox": [
+        166,
+        112,
+        222,
+        240
+      ],
+      "other_class": "plant",
+      "other_bbox": [
+        271,
+        126,
+        298,
+        153
+      ],
+      "iou": 0.0,
+      "center_dist_norm": 0.12197912218900413,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (plant)."
+    },
+    {
+      "cat_bbox": [
+        166,
+        112,
+        222,
+        240
+      ],
+      "other_class": "cup",
+      "other_bbox": [
+        271,
+        167,
+        287,
+        186
+      ],
+      "iou": 0.0,
+      "center_dist_norm": 0.1062518382193927,
+      "weight": 2.0,
+      "message": "Mischief Alert! Your cat is plotting against your drink!"
+    },
+    {
+      "cat_bbox": [
+        166,
+        112,
+        222,
+        240
+      ],
+      "other_class": "plant",
+      "other_bbox": [
+        195,
+        113,
+        228,
+        147
+      ],
+      "iou": 0.1245252306022789,
+      "center_dist_norm": 0.06152044883613903,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (plant)."
+    },
+    {
+      "cat_bbox": [
+        166,
+        112,
+        222,
+        240
+      ],
+      "other_class": "plant",
+      "other_bbox": [
+        69,
+        95,
+        120,
+        145
+      ],
+      "iou": 0.0,
+      "center_dist_norm": 0.14272049826496544,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (plant)."
+    },
+    {
+      "cat_bbox": [
+        166,
+        112,
+        222,
+        240
+      ],
+      "other_class": "plant",
+      "other_bbox": [
+        228,
+        117,
+        255,
+        139
+      ],
+      "iou": 0.0,
+      "center_dist_norm": 0.08441202891176115,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (plant)."
+    },
+    {
+      "cat_bbox": [
+        166,
+        112,
+        222,
+        240
+      ],
+      "other_class": "plant",
+      "other_bbox": [
+        143,
+        39,
+        203,
+        152
+      ],
+      "iou": 0.11870388193776067,
+      "center_dist_norm": 0.10399256283504124,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (plant)."
+    },
+    {
+      "cat_bbox": [
+        166,
+        112,
+        222,
+        240
+      ],
+      "other_class": "plant",
+      "other_bbox": [
+        251,
+        133,
+        267,
+        149
+      ],
+      "iou": 0.0,
+      "center_dist_norm": 0.09228014412645874,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (plant)."
+    }
+  ]
+}

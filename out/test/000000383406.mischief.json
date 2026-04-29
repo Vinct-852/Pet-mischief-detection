@@ -1,0 +1,126 @@
+{
+  "image": "curated_yolo/images/test/000000383406.jpg",
+  "detections": [
+    {
+      "class": "cat",
+      "bbox": [
+        1,
+        239,
+        364,
+        448
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        277,
+        139,
+        589,
+        445
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        58,
+        216,
+        362,
+        310
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        341,
+        250,
+        639,
+        439
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        309,
+        206,
+        464,
+        328
+      ],
+      "conf": null
+    },
+    {
+      "class": "keyboard",
+      "bbox": [
+        176,
+        412,
+        559,
+        475
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 100,
+  "top_warning": "Caution: cat on/near keyboard.",
+  "triggered": [
+    {
+      "cat_bbox": [
+        1,
+        239,
+        364,
+        448
+      ],
+      "other_class": "keyboard",
+      "other_bbox": [
+        176,
+        412,
+        559,
+        475
+      ],
+      "iou": 0.07259621572918007,
+      "center_dist_norm": 0.26287176056016365,
+      "weight": 1.0,
+      "message": "Caution: cat on/near keyboard."
+    },
+    {
+      "cat_bbox": [
+        277,
+        139,
+        589,
+        445
+      ],
+      "other_class": "keyboard",
+      "other_bbox": [
+        176,
+        412,
+        559,
+        475
+      ],
+      "iou": 0.08437372501019992,
+      "center_dist_norm": 0.206316277229888,
+      "weight": 1.0,
+      "message": "Caution: cat on/near keyboard."
+    },
+    {
+      "cat_bbox": [
+        341,
+        250,
+        639,
+        439
+      ],
+      "other_class": "keyboard",
+      "other_bbox": [
+        176,
+        412,
+        559,
+        475
+      ],
+      "iou": 0.07893783946891973,
+      "center_dist_norm": 0.19687896821397657,
+      "weight": 1.0,
+      "message": "Caution: cat on/near keyboard."
+    }
+  ]
+}

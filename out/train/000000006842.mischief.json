@@ -1,0 +1,145 @@
+{
+  "image": "curated_yolo/images/train/000000006842.jpg",
+  "detections": [
+    {
+      "class": "plant",
+      "bbox": [
+        206,
+        2,
+        398,
+        237
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        53,
+        112,
+        264,
+        316
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        338,
+        133,
+        611,
+        309
+      ],
+      "conf": null
+    },
+    {
+      "class": "vase",
+      "bbox": [
+        279,
+        198,
+        335,
+        236
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        507,
+        195,
+        541,
+        214
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        88,
+        190,
+        112,
+        210
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 100,
+  "top_warning": "High Risk: cat near fragile object (plant).",
+  "triggered": [
+    {
+      "cat_bbox": [
+        53,
+        112,
+        264,
+        316
+      ],
+      "other_class": "plant",
+      "other_bbox": [
+        206,
+        2,
+        398,
+        237
+      ],
+      "iou": 0.08960130508935413,
+      "center_dist_norm": 0.2147764099010876,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (plant)."
+    },
+    {
+      "cat_bbox": [
+        53,
+        112,
+        264,
+        316
+      ],
+      "other_class": "cup",
+      "other_bbox": [
+        88,
+        190,
+        112,
+        210
+      ],
+      "iou": 0.01115137998327293,
+      "center_dist_norm": 0.07518986384480292,
+      "weight": 2.0,
+      "message": "Mischief Alert! Your cat is plotting against your drink!"
+    },
+    {
+      "cat_bbox": [
+        338,
+        133,
+        611,
+        309
+      ],
+      "other_class": "plant",
+      "other_bbox": [
+        206,
+        2,
+        398,
+        237
+      ],
+      "iou": 0.0717835450027609,
+      "center_dist_norm": 0.2501827457080124,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (plant)."
+    },
+    {
+      "cat_bbox": [
+        338,
+        133,
+        611,
+        309
+      ],
+      "other_class": "cup",
+      "other_bbox": [
+        507,
+        195,
+        541,
+        214
+      ],
+      "iou": 0.013444888444888444,
+      "center_dist_norm": 0.06522197674097283,
+      "weight": 2.0,
+      "message": "Mischief Alert! Your cat is plotting against your drink!"
+    }
+  ]
+}
