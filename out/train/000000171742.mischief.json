@@ -1,0 +1,255 @@
+{
+  "image": "curated_yolo/images/train/000000171742.jpg",
+  "detections": [
+    {
+      "class": "plant",
+      "bbox": [
+        4,
+        236,
+        180,
+        472
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        425,
+        32,
+        532,
+        331
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        217,
+        191,
+        283,
+        450
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        256,
+        194,
+        316,
+        424
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        342,
+        363,
+        547,
+        475
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        305,
+        150,
+        361,
+        406
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        387,
+        124,
+        452,
+        351
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        348,
+        156,
+        398,
+        380
+      ],
+      "conf": null
+    },
+    {
+      "class": "vase",
+      "bbox": [
+        310,
+        305,
+        347,
+        404
+      ],
+      "conf": null
+    },
+    {
+      "class": "vase",
+      "bbox": [
+        425,
+        205,
+        482,
+        327
+      ],
+      "conf": null
+    },
+    {
+      "class": "vase",
+      "bbox": [
+        221,
+        346,
+        270,
+        449
+      ],
+      "conf": null
+    },
+    {
+      "class": "vase",
+      "bbox": [
+        262,
+        328,
+        309,
+        424
+      ],
+      "conf": null
+    },
+    {
+      "class": "vase",
+      "bbox": [
+        350,
+        279,
+        385,
+        384
+      ],
+      "conf": null
+    },
+    {
+      "class": "vase",
+      "bbox": [
+        385,
+        252,
+        422,
+        353
+      ],
+      "conf": null
+    },
+    {
+      "class": "vase",
+      "bbox": [
+        180,
+        375,
+        237,
+        474
+      ],
+      "conf": null
+    },
+    {
+      "class": "vase",
+      "bbox": [
+        121,
+        398,
+        184,
+        475
+      ],
+      "conf": null
+    },
+    {
+      "class": "vase",
+      "bbox": [
+        372,
+        150,
+        406,
+        195
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 25,
+  "top_warning": "High Risk: cat near fragile object (plant).",
+  "triggered": [
+    {
+      "cat_bbox": [
+        342,
+        363,
+        547,
+        475
+      ],
+      "other_class": "plant",
+      "other_bbox": [
+        305,
+        150,
+        361,
+        406
+      ],
+      "iou": 0.022396447271032648,
+      "center_dist_norm": 0.22469858282819677,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (plant)."
+    },
+    {
+      "cat_bbox": [
+        342,
+        363,
+        547,
+        475
+      ],
+      "other_class": "plant",
+      "other_bbox": [
+        348,
+        156,
+        398,
+        380
+      ],
+      "iou": 0.025517862503752625,
+      "center_dist_norm": 0.208840736268095,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (plant)."
+    },
+    {
+      "cat_bbox": [
+        342,
+        363,
+        547,
+        475
+      ],
+      "other_class": "vase",
+      "other_bbox": [
+        310,
+        305,
+        347,
+        404
+      ],
+      "iou": 0.007759860701037171,
+      "center_dist_norm": 0.16590777746989438,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (vase)."
+    },
+    {
+      "cat_bbox": [
+        342,
+        363,
+        547,
+        475
+      ],
+      "other_class": "vase",
+      "other_bbox": [
+        350,
+        279,
+        385,
+        384
+      ],
+      "iou": 0.02837837837837838,
+      "center_dist_norm": 0.14569472579678375,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (vase)."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "image": "curated_yolo/images/test/000000128429.jpg",
+  "detections": [
+    {
+      "class": "cat",
+      "bbox": [
+        229,
+        7,
+        639,
+        475
+      ],
+      "conf": null
+    },
+    {
+      "class": "laptop",
+      "bbox": [
+        0,
+        3,
+        479,
+        473
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        0,
+        10,
+        175,
+        194
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 100,
+  "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+  "triggered": [
+    {
+      "cat_bbox": [
+        229,
+        7,
+        639,
+        475
+      ],
+      "other_class": "laptop",
+      "other_bbox": [
+        0,
+        3,
+        479,
+        473
+      ],
+      "iou": 0.3876742870453562,
+      "center_dist_norm": 0.24315391858861746,
+      "weight": 1.5,
+      "message": "Warning: cat near laptop \u2014 risk to device or cables."
+    },
+    {
+      "cat_bbox": [
+        0,
+        10,
+        175,
+        194
+      ],
+      "other_class": "laptop",
+      "other_bbox": [
+        0,
+        3,
+        479,
+        473
+      ],
+      "iou": 0.14302847243814684,
+      "center_dist_norm": 0.25495097567963926,
+      "weight": 1.5,
+      "message": "Warning: cat near laptop \u2014 risk to device or cables."
+    }
+  ]
+}

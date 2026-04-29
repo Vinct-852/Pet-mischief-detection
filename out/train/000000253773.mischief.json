@@ -1,0 +1,178 @@
+{
+  "image": "curated_yolo/images/train/000000253773.jpg",
+  "detections": [
+    {
+      "class": "plant",
+      "bbox": [
+        42,
+        294,
+        97,
+        356
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        98,
+        268,
+        123,
+        344
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        234,
+        37,
+        484,
+        340
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        5,
+        310,
+        45,
+        359
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        559,
+        158,
+        580,
+        185
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        571,
+        153,
+        598,
+        184
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        486,
+        83,
+        515,
+        95
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        490,
+        95,
+        519,
+        105
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        523,
+        165,
+        547,
+        190
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        597,
+        125,
+        631,
+        180
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        547,
+        164,
+        559,
+        187
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        628,
+        118,
+        639,
+        177
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        512,
+        167,
+        526,
+        191
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        557,
+        165,
+        565,
+        186
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        488,
+        167,
+        507,
+        194
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        505,
+        167,
+        514,
+        193
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        515,
+        31,
+        637,
+        128
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 0,
+  "top_warning": "No issues detected.",
+  "triggered": []
+}

@@ -1,0 +1,77 @@
+{
+  "image": "curated_yolo/images/train/000000355075.jpg",
+  "detections": [
+    {
+      "class": "plant",
+      "bbox": [
+        314,
+        46,
+        479,
+        498
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        127,
+        321,
+        336,
+        469
+      ],
+      "conf": null
+    },
+    {
+      "class": "keyboard",
+      "bbox": [
+        94,
+        472,
+        425,
+        576
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 75,
+  "top_warning": "High Risk: cat near fragile object (plant).",
+  "triggered": [
+    {
+      "cat_bbox": [
+        127,
+        321,
+        336,
+        469
+      ],
+      "other_class": "plant",
+      "other_bbox": [
+        314,
+        46,
+        479,
+        498
+      ],
+      "iou": 0.031841652323580036,
+      "center_dist_norm": 0.25725109329213747,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (plant)."
+    },
+    {
+      "cat_bbox": [
+        127,
+        321,
+        336,
+        469
+      ],
+      "other_class": "keyboard",
+      "other_bbox": [
+        94,
+        472,
+        425,
+        576
+      ],
+      "iou": 0.0,
+      "center_dist_norm": 0.16500473478055105,
+      "weight": 1.0,
+      "message": "Caution: cat on/near keyboard."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "image": "curated_yolo/images/train/000000572993.jpg",
+  "detections": [
+    {
+      "class": "cat",
+      "bbox": [
+        76,
+        76,
+        362,
+        253
+      ],
+      "conf": null
+    },
+    {
+      "class": "laptop",
+      "bbox": [
+        133,
+        46,
+        444,
+        330
+      ],
+      "conf": null
+    },
+    {
+      "class": "scissors",
+      "bbox": [
+        19,
+        60,
+        83,
+        109
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 88,
+  "top_warning": "Danger: scissors close to pet!",
+  "triggered": [
+    {
+      "cat_bbox": [
+        76,
+        76,
+        362,
+        253
+      ],
+      "other_class": "laptop",
+      "other_bbox": [
+        133,
+        46,
+        444,
+        330
+      ],
+      "iou": 0.4118663184741853,
+      "center_dist_norm": 0.11738483718095792,
+      "weight": 1.5,
+      "message": "Warning: cat near laptop \u2014 risk to device or cables."
+    },
+    {
+      "cat_bbox": [
+        76,
+        76,
+        362,
+        253
+      ],
+      "other_class": "scissors",
+      "other_bbox": [
+        19,
+        60,
+        83,
+        109
+      ],
+      "iou": 0.004315579053561754,
+      "center_dist_norm": 0.297720405750093,
+      "weight": 2.0,
+      "message": "Danger: scissors close to pet!"
+    }
+  ]
+}

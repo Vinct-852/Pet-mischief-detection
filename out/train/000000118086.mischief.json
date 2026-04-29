@@ -1,0 +1,135 @@
+{
+  "image": "curated_yolo/images/train/000000118086.jpg",
+  "detections": [
+    {
+      "class": "cat",
+      "bbox": [
+        56,
+        99,
+        479,
+        601
+      ],
+      "conf": null
+    },
+    {
+      "class": "laptop",
+      "bbox": [
+        1,
+        342,
+        351,
+        637
+      ],
+      "conf": null
+    },
+    {
+      "class": "scissors",
+      "bbox": [
+        41,
+        93,
+        65,
+        137
+      ],
+      "conf": null
+    },
+    {
+      "class": "keyboard",
+      "bbox": [
+        62,
+        582,
+        359,
+        639
+      ],
+      "conf": null
+    },
+    {
+      "class": "laptop",
+      "bbox": [
+        347,
+        67,
+        479,
+        206
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 75,
+  "top_warning": "Danger: scissors close to pet!",
+  "triggered": [
+    {
+      "cat_bbox": [
+        56,
+        99,
+        479,
+        601
+      ],
+      "other_class": "laptop",
+      "other_bbox": [
+        1,
+        342,
+        351,
+        637
+      ],
+      "iou": 0.3194309150427901,
+      "center_dist_norm": 0.20853844070098923,
+      "weight": 1.5,
+      "message": "Warning: cat near laptop \u2014 risk to device or cables."
+    },
+    {
+      "cat_bbox": [
+        56,
+        99,
+        479,
+        601
+      ],
+      "other_class": "scissors",
+      "other_bbox": [
+        41,
+        93,
+        65,
+        137
+      ],
+      "iou": 0.0016051816389749366,
+      "center_dist_norm": 0.397718591626039,
+      "weight": 2.0,
+      "message": "Danger: scissors close to pet!"
+    },
+    {
+      "cat_bbox": [
+        56,
+        99,
+        479,
+        601
+      ],
+      "other_class": "keyboard",
+      "other_bbox": [
+        62,
+        582,
+        359,
+        639
+      ],
+      "iou": 0.025233419188667096,
+      "center_dist_norm": 0.333328971325626,
+      "weight": 1.0,
+      "message": "Caution: cat on/near keyboard."
+    },
+    {
+      "cat_bbox": [
+        56,
+        99,
+        479,
+        601
+      ],
+      "other_class": "laptop",
+      "other_bbox": [
+        347,
+        67,
+        479,
+        206
+      ],
+      "iou": 0.06521678902895138,
+      "center_dist_norm": 0.32295631477027975,
+      "weight": 1.5,
+      "message": "Warning: cat near laptop \u2014 risk to device or cables."
+    }
+  ]
+}

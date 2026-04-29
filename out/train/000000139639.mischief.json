@@ -1,0 +1,28 @@
+{
+  "image": "curated_yolo/images/train/000000139639.jpg",
+  "detections": [
+    {
+      "class": "cat",
+      "bbox": [
+        69,
+        276,
+        129,
+        336
+      ],
+      "conf": null
+    },
+    {
+      "class": "laptop",
+      "bbox": [
+        431,
+        294,
+        549,
+        347
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 0,
+  "top_warning": "No issues detected.",
+  "triggered": []
+}

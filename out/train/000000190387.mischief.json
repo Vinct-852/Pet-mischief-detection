@@ -1,0 +1,174 @@
+{
+  "image": "curated_yolo/images/train/000000190387.jpg",
+  "detections": [
+    {
+      "class": "cat",
+      "bbox": [
+        1,
+        61,
+        183,
+        472
+      ],
+      "conf": null
+    },
+    {
+      "class": "laptop",
+      "bbox": [
+        237,
+        69,
+        639,
+        470
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        399,
+        116,
+        418,
+        136
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        524,
+        183,
+        549,
+        210
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        543,
+        172,
+        562,
+        190
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        545,
+        218,
+        568,
+        250
+      ],
+      "conf": null
+    },
+    {
+      "class": "keyboard",
+      "bbox": [
+        309,
+        268,
+        639,
+        391
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 100,
+  "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+  "triggered": [
+    {
+      "cat_bbox": [
+        399,
+        116,
+        418,
+        136
+      ],
+      "other_class": "laptop",
+      "other_bbox": [
+        237,
+        69,
+        639,
+        470
+      ],
+      "iou": 0.002357290852470813,
+      "center_dist_norm": 0.18312606654979516,
+      "weight": 1.5,
+      "message": "Warning: cat near laptop \u2014 risk to device or cables."
+    },
+    {
+      "cat_bbox": [
+        524,
+        183,
+        549,
+        210
+      ],
+      "other_class": "laptop",
+      "other_bbox": [
+        237,
+        69,
+        639,
+        470
+      ],
+      "iou": 0.004187292961625786,
+      "center_dist_norm": 0.15325249794049037,
+      "weight": 1.5,
+      "message": "Warning: cat near laptop \u2014 risk to device or cables."
+    },
+    {
+      "cat_bbox": [
+        543,
+        172,
+        562,
+        190
+      ],
+      "other_class": "laptop",
+      "other_bbox": [
+        237,
+        69,
+        639,
+        470
+      ],
+      "iou": 0.0021215617672237317,
+      "center_dist_norm": 0.18089404702753487,
+      "weight": 1.5,
+      "message": "Warning: cat near laptop \u2014 risk to device or cables."
+    },
+    {
+      "cat_bbox": [
+        545,
+        218,
+        568,
+        250
+      ],
+      "other_class": "laptop",
+      "other_bbox": [
+        237,
+        69,
+        639,
+        470
+      ],
+      "iou": 0.004565700177417154,
+      "center_dist_norm": 0.15462909250849272,
+      "weight": 1.5,
+      "message": "Warning: cat near laptop \u2014 risk to device or cables."
+    },
+    {
+      "cat_bbox": [
+        545,
+        218,
+        568,
+        250
+      ],
+      "other_class": "keyboard",
+      "other_bbox": [
+        309,
+        268,
+        639,
+        391
+      ],
+      "iou": 0.0,
+      "center_dist_norm": 0.15775029714710523,
+      "weight": 1.0,
+      "message": "Caution: cat on/near keyboard."
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "image": "curated_yolo/images/train/000000267794.jpg",
+  "detections": [
+    {
+      "class": "cat",
+      "bbox": [
+        11,
+        121,
+        412,
+        374
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        353,
+        41,
+        639,
+        354
+      ],
+      "conf": null
+    },
+    {
+      "class": "keyboard",
+      "bbox": [
+        164,
+        343,
+        463,
+        479
+      ],
+      "conf": null
+    },
+    {
+      "class": "scissors",
+      "bbox": [
+        149,
+        7,
+        194,
+        60
+      ],
+      "conf": null
+    },
+    {
+      "class": "scissors",
+      "bbox": [
+        191,
+        28,
+        247,
+        86
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 33,
+  "top_warning": "Caution: cat on/near keyboard.",
+  "triggered": [
+    {
+      "cat_bbox": [
+        11,
+        121,
+        412,
+        374
+      ],
+      "other_class": "keyboard",
+      "other_bbox": [
+        164,
+        343,
+        463,
+        479
+      ],
+      "iou": 0.05719004083940221,
+      "center_dist_norm": 0.24088460022384162,
+      "weight": 1.0,
+      "message": "Caution: cat on/near keyboard."
+    },
+    {
+      "cat_bbox": [
+        353,
+        41,
+        639,
+        354
+      ],
+      "other_class": "keyboard",
+      "other_bbox": [
+        164,
+        343,
+        463,
+        479
+      ],
+      "iou": 0.00938188133858512,
+      "center_dist_norm": 0.35108870851965607,
+      "weight": 1.0,
+      "message": "Caution: cat on/near keyboard."
+    }
+  ]
+}

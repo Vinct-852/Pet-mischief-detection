@@ -1,0 +1,48 @@
+{
+  "image": "curated_yolo/images/train/000000542487.jpg",
+  "detections": [
+    {
+      "class": "cat",
+      "bbox": [
+        52,
+        294,
+        213,
+        614
+      ],
+      "conf": null
+    },
+    {
+      "class": "vase",
+      "bbox": [
+        203,
+        379,
+        347,
+        595
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 100,
+  "top_warning": "High Risk: cat near fragile object (vase).",
+  "triggered": [
+    {
+      "cat_bbox": [
+        52,
+        294,
+        213,
+        614
+      ],
+      "other_class": "vase",
+      "other_bbox": [
+        203,
+        379,
+        347,
+        595
+      ],
+      "iou": 0.026844303042354346,
+      "center_dist_norm": 0.18599734156167516,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (vase)."
+    }
+  ]
+}

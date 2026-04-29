@@ -1,0 +1,106 @@
+{
+  "image": "curated_yolo/images/train/000000559366.jpg",
+  "detections": [
+    {
+      "class": "cat",
+      "bbox": [
+        196,
+        117,
+        372,
+        358
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        398,
+        129,
+        584,
+        479
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        576,
+        295,
+        609,
+        357
+      ],
+      "conf": null
+    },
+    {
+      "class": "laptop",
+      "bbox": [
+        190,
+        332,
+        401,
+        419
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 100,
+  "top_warning": "Mischief Alert! Your cat is plotting against your drink!",
+  "triggered": [
+    {
+      "cat_bbox": [
+        196,
+        117,
+        372,
+        358
+      ],
+      "other_class": "laptop",
+      "other_bbox": [
+        190,
+        332,
+        401,
+        419
+      ],
+      "iou": 0.0814278342260263,
+      "center_dist_norm": 0.17309792207013924,
+      "weight": 1.5,
+      "message": "Warning: cat near laptop \u2014 risk to device or cables."
+    },
+    {
+      "cat_bbox": [
+        398,
+        129,
+        584,
+        479
+      ],
+      "other_class": "cup",
+      "other_bbox": [
+        576,
+        295,
+        609,
+        357
+      ],
+      "iou": 0.0074418604651162795,
+      "center_dist_norm": 0.12982109083273025,
+      "weight": 2.0,
+      "message": "Mischief Alert! Your cat is plotting against your drink!"
+    },
+    {
+      "cat_bbox": [
+        398,
+        129,
+        584,
+        479
+      ],
+      "other_class": "laptop",
+      "other_bbox": [
+        190,
+        332,
+        401,
+        419
+      ],
+      "iou": 0.0031371700562527046,
+      "center_dist_norm": 0.2602057479188344,
+      "weight": 1.5,
+      "message": "Warning: cat near laptop \u2014 risk to device or cables."
+    }
+  ]
+}

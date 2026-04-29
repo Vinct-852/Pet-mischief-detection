@@ -1,74 +1,224 @@
-# Curated detection dataset
+# Curated Detection Dataset
 
-This document describes how the YOLO-format dataset is built, which preprocessing applies, and how to reproduce the **train / validation / test** split. **Exact image counts and disk sizes** depend on your run; after building, see `curated_yolo/dataset_manifest.json` (machine-readable) and the console summary from `split_yolo_dataset.py`.
+This document is the technical specification for dataset construction in this project. It covers business intent, architecture, implementation logic, and reproducibility controls for:
 
-## Layout (after full pipeline)
+- `coco_filtered/` (stage 1: class-filtered COCO subset in YOLO format)
+- `curated_yolo/` (stage 2: reproducible train/val/test split)
+- `curated_yolo_balanced/` (stage 2.5: optional train-only balancing subset)
+
+Exact counts depend on configuration and source availability. For any specific run, use `dataset_manifest.json` as source of truth.
+
+## 1) Business Logic and Product Intent
+
+The model target is pet-mischief detection in realistic household scenes. The business requirement is not generic COCO detection, but robust detection of cats and common risky/valuable objects around them.
+
+### Detection classes
+
+The pipeline uses seven classes:
+
+- `cat`
+- `cup`
+- `plant` (from COCO `potted plant`)
+- `laptop`
+- `keyboard`
+- `vase`
+- `scissors`
+
+### Why this class set
+
+- Represents frequent home/desk contexts where pet interference matters.
+- Mixes high-frequency and rare classes to evaluate robustness, not only easy classes.
+- Preserves multi-object context required by real-world mischief events.
+
+### Image inclusion policy
+
+Configurable by `ANY_TARGET_CLASS`:
+
+- `True` (current default): include images containing any target class (max coverage).
+- `False`: include images where `cat` co-occurs with at least one other target class (event-focused subset).
+
+This is the primary business-rule switch that controls how broad versus behavior-specific the data pool is.
+
+## 2) Technology Stack and Runtime
+
+- **Language:** Python 3.11+
+- **Data source:** COCO 2017 annotations + image CDN
+- **Model training/eval:** Ultralytics YOLOv8
+- **Label format:** YOLO detection text format (`class_id cx cy w h`)
+- **Execution mode:** notebook-driven (`proj_v3.ipynb`) with deterministic seed-based split
+
+## 3) Pipeline Architecture
 
 ```text
-coco_filtered/                    # Stage 1: COCO subset + COCO’s train/val folders
-├── images/train
-├── images/val
-├── labels/train
-├── labels/val
-├── annotations/instances_{train,val}.json
-└── data.yaml
-
-curated_yolo/                     # Stage 2: reproducible 80/10/10 split for training
-├── images/{train,val,test}
-├── labels/{train,val,test}
-├── data.yaml                     # train / val / test paths + class names
-└── dataset_manifest.json         # sizes, class distribution, seed, percentages
+COCO annotations zip
+        |
+        v
+Stage 1 (Task 1): filter classes + select images + COCO->YOLO conversion
+        |
+        v
+coco_filtered/
+  images/{train,val}
+  labels/{train,val}
+  annotations/instances_{train,val}.json
+  data.yaml
+        |
+        v
+Stage 2 (Task 2): reproducible shuffle + 80/10/10 split
+        |
+        v
+curated_yolo/
+  images/{train,val,test}
+  labels/{train,val,test}
+  data.yaml
+  dataset_manifest.json
+        |
+        v
+Optional Stage 2.5: class-balanced train subset creation
+        |
+        v
+curated_yolo_balanced/
+  images/{train,val,test}
+  labels/{train,val,test}
+  data.yaml
+  dataset_manifest.json
 ```
 
-## Pre-processing (stage 1: `scripts/prepare_coco_subset.py`)
+## 4) Design Decisions
 
-1. **Annotations only from COCO** — Downloads `annotations_trainval2017.zip` (not full image zips).
-2. **Class filter** — Seven COCO classes: `cat`, `cup`, `laptop`, `keyboard`, `vase`, `potted plant` (exported as **`plant`**), `scissors`. Category IDs are remapped to **0–6** in sorted original COCO category id order.
-3. **Image selection (default)** — Keeps images where a **cat** co-occurs with **at least one** other target class (cat + cup, cat + laptop, …). Use `--any-target-class` for the union of all seven classes without requiring cat.
-4. **Images** — Downloads only the JPEGs referenced by the filtered annotations from COCO’s CDN.
-5. **YOLO labels** — For each kept image, writes one `.txt` per image: one line per box, `class_id cx cy w h` in normalized coordinates (YOLO detection format).
+- **Two-stage construction** separates expensive COCO filtering from flexible split experiments.
+- **Seeded split** makes experiments reproducible and comparable over time.
+- **Manifest output** gives machine-readable evidence for audit/reporting.
+- **Optional balancing stage** allows fairness/performance tuning without mutating the canonical curated dataset.
+- **Val/test kept stable by default in balancing stage** to avoid evaluation leakage and preserve comparability.
 
-## Split (stage 2: `scripts/split_yolo_dataset.py`)
+## 5) Stage 1 Implementation (COCO subset preparation)
 
-1. **Pools** all `(image, label)` pairs from `coco_filtered/images/{train,val}` and matching `labels/`.
-2. **Shuffles** the list with a fixed **`--seed`** (default **42**).
-3. **Splits** **80% / 10% / 10%** into `train` / `val` / `test` using integer percentages (remainder goes to test so that counts sum exactly).
-4. **Copies** files into `curated_yolo/` (source tree is unchanged).
-5. **Writes** `data.yaml` with `train`, `val`, and **`test`** keys, and **`dataset_manifest.json`** with per-split image counts, **image bytes**, and **instances per class**.
+### Inputs
 
-Re-running with the same `--source`, `--seed`, and percentages yields the same assignment.
+- `annotations_trainval2017.zip`
+- Class mapping config (`TARGET_CLASSES`)
+- Selection mode (`ANY_TARGET_CLASS`)
 
-## End-to-end commands
+### Core logic
 
-```bash
-# 1) Build coco_filtered/ (YOLO labels + optional image download)
-python3 scripts/prepare_coco_subset.py --verify
+1. Load COCO JSON (`instances_train2017.json`, `instances_val2017.json`).
+2. Keep only configured category IDs.
+3. Build kept image IDs:
+   - Any target class (`ANY_TARGET_CLASS=True`), or
+   - Cat + at least one other target class (`False` mode).
+4. Filter annotations/images to kept IDs.
+5. Remap category IDs to contiguous model IDs `0..6`.
+6. Download only referenced images.
+7. Convert COCO bbox to YOLO normalized format and write labels.
 
-# 2) Build curated_yolo/ with reproducible 80/10/10 split
-python3 scripts/split_yolo_dataset.py --force
-```
+### Output contract
 
-Custom split (example: 70/15/15, seed 123):
+- One label file per image.
+- Label and image basenames must match.
+- IDs in label files must align with `data.yaml` names order.
 
-```bash
-python3 scripts/split_yolo_dataset.py --seed 123 --train-pct 70 --val-pct 15 --test-pct 15 --force
-```
+## 6) Stage 2 Implementation (reproducible split)
 
-## Format for training (YOLO)
+### Inputs
 
-- **Images:** RGB files under `images/<split>/`.
-- **Labels:** Same basename as the image, extension `.txt`, UTF-8 text.
-- **Each line:** `class_id center_x center_y width height` with values in **\[0, 1\]** relative to image width/height.
-- **`data.yaml`:** `path`, `train`, `val`, `test`, `nc`, `names` — compatible with Ultralytics YOLO-style configs.
+- `coco_filtered/images/{train,val}`
+- `coco_filtered/labels/{train,val}`
+- `SEED`, `TRAIN_PCT`, `VAL_PCT`, `TEST_PCT`
 
-Conversion from COCO JSON to YOLO lines is implemented in `prepare_coco_subset.py` (`coco_to_yolo`). The split step does not alter label contents.
+### Core logic
 
-## Where to read sizes and class distribution
+1. Collect valid `(image, label)` pairs.
+2. Shuffle pair indices with deterministic seed.
+3. Compute integer cut points for train/val.
+4. Assign remainder to test to keep total exact.
+5. Copy files into `curated_yolo`.
+6. Write:
+   - `data.yaml`
+   - `dataset_manifest.json` (per-split image counts and class-instance counts)
 
-| Artifact | Content |
-|----------|---------|
-| `curated_yolo/dataset_manifest.json` | Per-split `image_bytes`, `instances_per_class`, `seed`, percentages |
-| Terminal output of `split_yolo_dataset.py` | Short table of counts per split |
-| `python3 scripts/prepare_coco_subset.py --verify` | Class counts under **COCO’s** train/val folders before re-split |
+### Important implementation behavior
 
-After you run the split, paste or summarize `dataset_manifest.json` in reports if you need fixed numbers in prose; the JSON is the source of truth for that run.
+- No per-class cap is applied in stage 2.
+- Class distribution is inherited from filtered COCO pool + random split.
+- Re-running with same inputs/config yields same split assignment.
+
+## 7) Stage 2.5 Implementation (balanced subset)
+
+This optional stage addresses class imbalance in train data.
+
+### Inputs
+
+- `curated_yolo/` train split
+- `BALANCE_MODE`:
+  - `min`: target is minority class instance count
+  - `fixed`: target is `TARGET_PER_CLASS`
+
+### Selection algorithm
+
+- Parse class-instance counts per label file.
+- Greedy multi-label selection:
+  - Compute class deficits vs target.
+  - Select image that best reduces deficits.
+  - Repeat until no deficit can be improved.
+- Optional trim pass removes redundant images while keeping target coverage.
+
+### Output strategy
+
+- Balanced `train` subset.
+- By default copy original `val/test` unchanged.
+- Emit separate `curated_yolo_balanced/data.yaml` and `dataset_manifest.json`.
+
+## 8) Reproducibility and Determinism
+
+- `SEED` controls split order.
+- `BALANCED_SEED` controls subset selection tie-breaking.
+- Stable outputs depend on:
+  - unchanged source files
+  - identical config values
+  - same directory contents
+
+For experiment logging, store:
+
+- `dataset_manifest.json`
+- training command/config
+- model artifact path (`weights/best.pt`)
+
+## 9) Performance and Operational Notes
+
+- Dataset build can be slow due to:
+  - network-bound image download (stage 1)
+  - large-scale file copy (stage 2/2.5)
+  - label parsing + greedy selection complexity (stage 2.5)
+- On Windows, `copy2` adds metadata overhead versus plain `copy`.
+- For rapid iteration, disable val/test copy in stage 2.5 if not required.
+
+## 10) Dataset Format Contract (YOLO)
+
+- Images: `images/<split>/...`
+- Labels: `labels/<split>/<same_stem>.txt`
+- Label line: `class_id center_x center_y width height`
+- Coordinates normalized to `[0,1]`
+- `data.yaml` keys:
+  - `path`
+  - `train`
+  - `val`
+  - `test`
+  - `nc`
+  - `names`
+
+## 11) Validation and Sanity Checklist
+
+Before training:
+
+1. `data.yaml` paths resolve correctly.
+2. Each image has a corresponding label file.
+3. Class IDs in labels are within `[0, nc-1]`.
+4. `dataset_manifest.json` class names match training config.
+5. Train/val/test counts are non-zero and align with expected split ratios.
+
+## 12) Run Artifacts to Reference
+
+- `curated_yolo/dataset_manifest.json` - canonical split stats
+- `curated_yolo_balanced/dataset_manifest.json` - balanced split stats
+- training `runs/detect/.../results.csv` - epoch metrics trend
+- validation `runs/detect/val*/` - confusion matrix and PR/recall curves

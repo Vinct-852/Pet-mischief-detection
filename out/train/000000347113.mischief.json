@@ -1,0 +1,116 @@
+{
+  "image": "curated_yolo/images/train/000000347113.jpg",
+  "detections": [
+    {
+      "class": "cup",
+      "bbox": [
+        239,
+        235,
+        246,
+        247
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        217,
+        234,
+        225,
+        246
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        229,
+        237,
+        237,
+        249
+      ],
+      "conf": null
+    },
+    {
+      "class": "vase",
+      "bbox": [
+        6,
+        143,
+        34,
+        171
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        243,
+        276,
+        339,
+        317
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 75,
+  "top_warning": "Mischief Alert! Your cat is plotting against your drink!",
+  "triggered": [
+    {
+      "cat_bbox": [
+        243,
+        276,
+        339,
+        317
+      ],
+      "other_class": "cup",
+      "other_bbox": [
+        239,
+        235,
+        246,
+        247
+      ],
+      "iou": 0.0,
+      "center_dist_norm": 0.0921318688077041,
+      "weight": 2.0,
+      "message": "Mischief Alert! Your cat is plotting against your drink!"
+    },
+    {
+      "cat_bbox": [
+        243,
+        276,
+        339,
+        317
+      ],
+      "other_class": "cup",
+      "other_bbox": [
+        217,
+        234,
+        225,
+        246
+      ],
+      "iou": 0.0,
+      "center_dist_norm": 0.11244616767591503,
+      "weight": 2.0,
+      "message": "Mischief Alert! Your cat is plotting against your drink!"
+    },
+    {
+      "cat_bbox": [
+        243,
+        276,
+        339,
+        317
+      ],
+      "other_class": "cup",
+      "other_bbox": [
+        229,
+        237,
+        237,
+        249
+      ],
+      "iou": 0.0,
+      "center_dist_norm": 0.09863323793225082,
+      "weight": 2.0,
+      "message": "Mischief Alert! Your cat is plotting against your drink!"
+    }
+  ]
+}

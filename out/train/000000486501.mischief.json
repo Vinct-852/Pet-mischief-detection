@@ -1,0 +1,77 @@
+{
+  "image": "curated_yolo/images/train/000000486501.jpg",
+  "detections": [
+    {
+      "class": "cat",
+      "bbox": [
+        139,
+        93,
+        629,
+        475
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        429,
+        87,
+        494,
+        179
+      ],
+      "conf": null
+    },
+    {
+      "class": "scissors",
+      "bbox": [
+        442,
+        24,
+        479,
+        95
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 100,
+  "top_warning": "Mischief Alert! Your cat is plotting against your drink!",
+  "triggered": [
+    {
+      "cat_bbox": [
+        139,
+        93,
+        629,
+        475
+      ],
+      "other_class": "cup",
+      "other_bbox": [
+        429,
+        87,
+        494,
+        179
+      ],
+      "iou": 0.02980220717598763,
+      "center_dist_norm": 0.21215873332248195,
+      "weight": 2.0,
+      "message": "Mischief Alert! Your cat is plotting against your drink!"
+    },
+    {
+      "cat_bbox": [
+        139,
+        93,
+        629,
+        475
+      ],
+      "other_class": "scissors",
+      "other_bbox": [
+        442,
+        24,
+        479,
+        95
+      ],
+      "iou": 0.0003900217674310742,
+      "center_dist_norm": 0.296470118646045,
+      "weight": 2.0,
+      "message": "Danger: scissors close to pet!"
+    }
+  ]
+}

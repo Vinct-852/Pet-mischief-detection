@@ -1,0 +1,87 @@
+{
+  "image": "curated_yolo/images/train/000000291091.jpg",
+  "detections": [
+    {
+      "class": "cat",
+      "bbox": [
+        138,
+        66,
+        270,
+        218
+      ],
+      "conf": null
+    },
+    {
+      "class": "laptop",
+      "bbox": [
+        1,
+        3,
+        311,
+        268
+      ],
+      "conf": null
+    },
+    {
+      "class": "keyboard",
+      "bbox": [
+        169,
+        270,
+        499,
+        371
+      ],
+      "conf": null
+    },
+    {
+      "class": "keyboard",
+      "bbox": [
+        0,
+        157,
+        304,
+        256
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 42,
+  "top_warning": "Warning: cat near laptop \u2014 risk to device or cables.",
+  "triggered": [
+    {
+      "cat_bbox": [
+        138,
+        66,
+        270,
+        218
+      ],
+      "other_class": "laptop",
+      "other_bbox": [
+        1,
+        3,
+        311,
+        268
+      ],
+      "iou": 0.24423615337796714,
+      "center_dist_norm": 0.07750096773589348,
+      "weight": 1.5,
+      "message": "Warning: cat near laptop \u2014 risk to device or cables."
+    },
+    {
+      "cat_bbox": [
+        138,
+        66,
+        270,
+        218
+      ],
+      "other_class": "keyboard",
+      "other_bbox": [
+        0,
+        157,
+        304,
+        256
+      ],
+      "iou": 0.19122257053291536,
+      "center_dist_norm": 0.13256123113489857,
+      "weight": 1.0,
+      "message": "Caution: cat on/near keyboard."
+    }
+  ]
+}

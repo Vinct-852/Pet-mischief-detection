@@ -1,0 +1,126 @@
+{
+  "image": "curated_yolo/images/test/000000380117.jpg",
+  "detections": [
+    {
+      "class": "plant",
+      "bbox": [
+        292,
+        303,
+        370,
+        392
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        328,
+        159,
+        568,
+        474
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        449,
+        14,
+        639,
+        391
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        107,
+        11,
+        244,
+        191
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        2,
+        59,
+        243,
+        298
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        210,
+        191,
+        385,
+        286
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 60,
+  "top_warning": "High Risk: cat near fragile object (plant).",
+  "triggered": [
+    {
+      "cat_bbox": [
+        210,
+        191,
+        385,
+        286
+      ],
+      "other_class": "plant",
+      "other_bbox": [
+        292,
+        303,
+        370,
+        392
+      ],
+      "iou": 0.0,
+      "center_dist_norm": 0.14253974226509603,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (plant)."
+    },
+    {
+      "cat_bbox": [
+        210,
+        191,
+        385,
+        286
+      ],
+      "other_class": "plant",
+      "other_bbox": [
+        328,
+        159,
+        568,
+        474
+      ],
+      "iou": 0.06237760626655915,
+      "center_dist_norm": 0.21188974874920213,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (plant)."
+    },
+    {
+      "cat_bbox": [
+        210,
+        191,
+        385,
+        286
+      ],
+      "other_class": "plant",
+      "other_bbox": [
+        2,
+        59,
+        243,
+        298
+      ],
+      "iou": 0.04409964973483943,
+      "center_dist_norm": 0.23125,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (plant)."
+    }
+  ]
+}

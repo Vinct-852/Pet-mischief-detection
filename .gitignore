@@ -40,11 +40,17 @@ ENV/
 .ipynb_checkpoints/
 
 # COCO / dataset tooling (large binaries & generated trees)
+out/
 coco_filtered/
 curated_yolo/
+curated_yolo_balanced/
 data/**/*.zip
 data/annotations/
 data/train2017/
 data/val2017/
 train2017/
 val2017/
+
+# Custom - sonia
+prev/
+yolo*.pt

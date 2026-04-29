@@ -1,0 +1,116 @@
+{
+  "image": "curated_yolo/images/test/000000433240.jpg",
+  "detections": [
+    {
+      "class": "plant",
+      "bbox": [
+        258,
+        2,
+        479,
+        639
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        0,
+        244,
+        287,
+        631
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        150,
+        350,
+        285,
+        498
+      ],
+      "conf": null
+    },
+    {
+      "class": "cat",
+      "bbox": [
+        167,
+        195,
+        362,
+        415
+      ],
+      "conf": null
+    },
+    {
+      "class": "plant",
+      "bbox": [
+        0,
+        352,
+        138,
+        546
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 75,
+  "top_warning": "High Risk: cat near fragile object (plant).",
+  "triggered": [
+    {
+      "cat_bbox": [
+        167,
+        195,
+        362,
+        415
+      ],
+      "other_class": "plant",
+      "other_bbox": [
+        258,
+        2,
+        479,
+        639
+      ],
+      "iou": 0.14229121190071953,
+      "center_dist_norm": 0.13143588028008182,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (plant)."
+    },
+    {
+      "cat_bbox": [
+        167,
+        195,
+        362,
+        415
+      ],
+      "other_class": "plant",
+      "other_bbox": [
+        0,
+        244,
+        287,
+        631
+      ],
+      "iou": 0.15376660746802148,
+      "center_dist_norm": 0.22429490213778824,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (plant)."
+    },
+    {
+      "cat_bbox": [
+        167,
+        195,
+        362,
+        415
+      ],
+      "other_class": "plant",
+      "other_bbox": [
+        150,
+        350,
+        285,
+        498
+      ],
+      "iou": 0.13892410795145807,
+      "center_dist_norm": 0.15993162601561955,
+      "weight": 2.0,
+      "message": "High Risk: cat near fragile object (plant)."
+    }
+  ]
+}

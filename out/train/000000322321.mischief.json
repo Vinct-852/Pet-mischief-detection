@@ -1,0 +1,107 @@
+{
+  "image": "curated_yolo/images/train/000000322321.jpg",
+  "detections": [
+    {
+      "class": "cat",
+      "bbox": [
+        345,
+        216,
+        415,
+        313
+      ],
+      "conf": null
+    },
+    {
+      "class": "keyboard",
+      "bbox": [
+        411,
+        288,
+        484,
+        307
+      ],
+      "conf": null
+    },
+    {
+      "class": "keyboard",
+      "bbox": [
+        63,
+        303,
+        148,
+        318
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        163,
+        274,
+        182,
+        294
+      ],
+      "conf": null
+    },
+    {
+      "class": "cup",
+      "bbox": [
+        279,
+        262,
+        297,
+        285
+      ],
+      "conf": null
+    },
+    {
+      "class": "laptop",
+      "bbox": [
+        44,
+        246,
+        166,
+        329
+      ],
+      "conf": null
+    }
+  ],
+  "mischief_score": 30,
+  "top_warning": "Mischief Alert! Your cat is plotting against your drink!",
+  "triggered": [
+    {
+      "cat_bbox": [
+        345,
+        216,
+        415,
+        313
+      ],
+      "other_class": "keyboard",
+      "other_bbox": [
+        411,
+        288,
+        484,
+        307
+      ],
+      "iou": 0.009381557832366374,
+      "center_dist_norm": 0.09391859839776145,
+      "weight": 1.0,
+      "message": "Caution: cat on/near keyboard."
+    },
+    {
+      "cat_bbox": [
+        345,
+        216,
+        415,
+        313
+      ],
+      "other_class": "cup",
+      "other_bbox": [
+        279,
+        262,
+        297,
+        285
+      ],
+      "iou": 0.0,
+      "center_dist_norm": 0.11554896148386622,
+      "weight": 2.0,
+      "message": "Mischief Alert! Your cat is plotting against your drink!"
+    }
+  ]
+}
