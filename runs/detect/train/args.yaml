@@ -1,7 +1,7 @@
 task: detect
 mode: train
 model: yolov8n.pt
-data: curated_yolo/data.yaml
+data: curated_yolo_with_negatives_balanced/data.yaml
 epochs: 50
 time: null
 patience: 100
@@ -18,7 +18,7 @@ exist_ok: false
 pretrained: true
 optimizer: auto
 verbose: true
-seed: 0
+seed: 42
 deterministic: true
 single_cls: false
 rect: false

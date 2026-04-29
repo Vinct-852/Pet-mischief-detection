@@ -22,6 +22,8 @@ from datetime import UTC, datetime
 from pathlib import Path
 
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
+DATASET_SOURCE_FOLDER_NAME = "coco_filtered"
+DATASET_OUTPUT_FOLDER_NAME = "curated_yolo"
 
 
 def parse_data_yaml_names(data_yaml: Path) -> list[str]:
@@ -132,13 +134,13 @@ def main() -> None:
     ap.add_argument(
         "--source",
         type=Path,
-        default=Path("coco_filtered"),
+        default=Path(DATASET_SOURCE_FOLDER_NAME),
         help="YOLO-style root with images/{train,val,...} and labels/{...}.",
     )
     ap.add_argument(
         "--output",
         type=Path,
-        default=Path("curated_yolo"),
+        default=Path(DATASET_OUTPUT_FOLDER_NAME),
         help="Destination root (created).",
     )
     ap.add_argument(

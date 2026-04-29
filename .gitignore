@@ -42,6 +42,8 @@ ENV/
 # COCO / dataset tooling (large binaries & generated trees)
 coco_filtered/
 curated_yolo/
+curated_yolo_with_negatives_balanced/
+coco_filtered_with_negatives_balanced/
 data/**/*.zip
 data/annotations/
 data/train2017/
@@ -52,3 +54,4 @@ val2017/
 # Custom - sonia
 prev/
 yolo*.pt
+runs*.zip
