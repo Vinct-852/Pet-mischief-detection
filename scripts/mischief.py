@@ -2,14 +2,14 @@
 """
 Compute mischief scores from YOLO-format detections and produce annotated images/JSON.
 
-Usage examples:
+Usage:
   python3 scripts/mischief.py --image images/example.jpg --labels labels/example.txt --out out
   python3 scripts/mischief.py --images-dir curated_yolo/images --labels-dir curated_yolo/labels --out out
 
 The script implements the project's rules for classes:
  0 cat, 1 cup, 2 plant, 3 laptop, 4 keyboard, 5 vase, 6 scissors
 
-Rules (updated):
+Rules:
  - Cat + Cup: IoU>0 or center_distance < 0.12*diag -> High (weight 2)
  - Cat + Plant/Vase: IoU>0 or center_distance < 0.15*diag -> High (weight 2)
  - Cat + Laptop: IoU>0 or center_distance < 0.18*diag -> Medium-High (weight 1.5)
@@ -17,10 +17,6 @@ Rules (updated):
  - Cat + Scissors: IoU>0 or center_distance < 0.10*diag -> High (weight 2)
 
 Safety rule: if there are no non-cat detections (only cat(s) or no detections) -> safe/low risk.
-
-Outputs per image:
- - JSON summary with `mischief_score` (0-100), `top_warning`, and triggered rules
- - Annotated image with boxes and summary overlay (if `--draw`)
 """
 
 from __future__ import annotations

@@ -1,5 +1,6 @@
 # mischif_out images and results
 mischief_out/
+mischief_pred_out/
 
 # Python
 __pycache__/
@@ -57,4 +58,13 @@ val2017/
 # Custom - sonia
 prev/
 yolo*.pt
+<<<<<<< HEAD
 runs*.zip
+=======
+
+# Model training outputs
+runs/
+
+# Scripts mistakenly run in wrong location
+scripts/runs/
+>>>>>>> task4a
