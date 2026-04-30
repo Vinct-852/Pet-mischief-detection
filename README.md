@@ -2,13 +2,64 @@
 
 An object detection system that identifies potential "mischief scenarios" where cats interact with household objects. Built on YOLOv8 and trained on a curated subset of COCO 2017.
 
+## TLDR
+
+**What it is:** A **YOLOv8** detector for seven classes (`cat`, `cup`, `plant`, `laptop`, `keyboard`, `vase`, `scissors`), plus an optional **mischief layer** (Task 4) that turns boxes and labels into a **risk score** and **warning message**.
+
+**Architecture (inference):**
+
+```text
+Image / video frame
+        │
+        ▼
+┌───────────────────┐
+│ YOLOv8 detector   │  ← `best.pt` from `runs/detect/...`
+│ (classes + boxes) │
+└─────────┬─────────┘
+          │
+          ▼
+┌───────────────────┐
+│ Mischief logic    │  (optional: proximity / co-occurrence rules)
+│ risk + message    │
+└───────────────────┘
+```
+
+**Data pipeline (offline):**
+
+```text
+COCO 2017 annotations (+ on-demand images)
+        │  Task 1: filter classes, YOLO labels
+        ▼
+   coco_filtered/
+        │  Task 2: seeded 80/10/10 split + manifest
+        ▼
+   curated_yolo/  ← data.yaml points here for training
+        │  Task 3: Ultralytics train
+        ▼
+   runs/detect/<run>/weights/best.pt
+        │  Task 4: test mAP + qualitative system demo
+        ▼
+   metrics, plots, mischief visualizations
+```
+
+**How to run:**
+
+| Path | Steps |
+|------|--------|
+| **Notebook (recommended)** | Open `proj_v3.ipynb` in Colab or locally → install deps → run global config → **Task 1** (build `coco_filtered/`) → **Task 2** (build `curated_yolo/`) → training cells → Task 4 eval / mischief demo as implemented in the notebook. |
+| **CLI (local)** | `pip install ultralytics opencv-python` → run `scripts/prepare_coco_subset.py` and `scripts/split_yolo_dataset.py` (see [Quick Start](#quick-start)) → `yolo train model=yolov8s.pt data=curated_yolo/data.yaml epochs=100` |
+
+Details, hyperparameters, and troubleshooting are in the sections below.
+
 ## Table of Contents
 
+- [TLDR](#tldr)
 - [Project Overview](#project-overview)
 - [Design Details](#design-details)
   - [Task 1: COCO Subset Preparation](#task-1-coco-subset-preparation)
   - [Task 2: Dataset Splitting](#task-2-dataset-splitting)
   - [Task 3: Model Training](#task-3-model-training)
+  - [Task 4: Mischief System Implementation & Evaluation](#task-4-mischief-system-implementation--evaluation)
 - [Design and Testing Methodology](#design-and-testing-methodology)
 - [Robustness in Real Scenarios](#robustness-in-real-scenarios)
 - [Problems and Solutions](#problems-and-solutions)
@@ -150,6 +201,44 @@ curated_yolo/
 
 ---
 
+### Task 4: Mischief System Implementation & Evaluation
+
+This task has two parts: evaluating the detector quantitatively, then demonstrating the full **mischief system** (vision model + reasoning + user-facing output).
+
+#### Part A: Quantitative detector evaluation
+
+**Objective:** Evaluate the core vision model on the **held-out test set** using standard object-detection metrics.
+
+**Required metrics (object detection):**
+
+| Metric | Meaning |
+|--------|---------|
+| **mAP@0.5** | Mean average precision at a single IoU threshold of 0.5—whether predicted boxes overlap ground truth “well enough” for localization. |
+| **mAP@[0.5:0.95]** | mAP averaged over IoU thresholds from 0.50 to 0.95 (COCO-style)—rewards tighter, higher-quality boxes, not just loose overlaps. |
+
+**Why these metrics:** For bounding-box detection, mAP@0.5 is the widely reported standard for “did we find the object in roughly the right place”; mAP@[0.5:0.95] is the standard strictness measure for **localization quality** and ranking. Together they reflect both detection reliability and box precision, which matter for downstream “mischief” logic that depends on *where* the cat is relative to fragile or dangerous objects.
+
+**Deliverable:** Report both on the test split (e.g. via Ultralytics `model.val(data=..., split="test")` or equivalent), alongside any per-class breakdown useful for interpreting failure modes.
+
+#### Part B: Qualitative system evaluation
+
+**Mischief logic:** Implement a layer above raw detections that consumes model outputs (class labels, confidence scores, bounding boxes) and produces:
+
+- A **risk score** (scalar or ordinal level), and  
+- A **warning message** (human-readable explanation).
+
+**Report requirements:**
+
+- **Visualizations** from the **test set** showing the **full pipeline**: image → detections → risk + message (e.g. overlays or side-by-side panels).
+- **Examples to include:**
+  - Correctly identified **high-risk** scenarios (e.g. cat near scissors, cup, laptop—according to your rules).
+  - Correctly identified **low-risk** or **clear** scenarios (e.g. cat alone, or objects without concerning spatial relation).
+  - **Failure cases** (missed object, false alarm, wrong risk level)—with a short justification of *why* the logic or model failed.
+
+**Justifying the logic:** Explain how your rules map detections to risk (e.g. co-occurrence of `cat` + hazard class, IoU or distance between boxes, confidence thresholds, class-specific weights). Tie that design to the product goal: reducing nuisance alerts while surfacing plausible mischief or safety-relevant situations.
+
+---
+
 ## Design and Testing Methodology
 
 ### Software Architecture
@@ -170,6 +259,14 @@ curated_yolo/
         │                     │                     │
         ▼                     ▼                     ▼
   coco_filtered/       curated_yolo/         runs/detect/
+                                         (weights, metrics)
+                                                │
+                                                ▼
+                                    ┌───────────────────────┐
+                                    │        Task 4         │
+                                    │ Test-set mAP +        │
+                                    │ mischief logic + demo │
+                                    └───────────────────────┘
 ```
 
 ### Testing Strategy
